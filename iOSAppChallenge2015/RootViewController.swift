@@ -66,6 +66,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController!.doubleSided = false
         return .Min
     }
+    //Hello it was arthur
 
 
 }
