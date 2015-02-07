@@ -11,8 +11,6 @@ import Foundation
 
 //MARK: Globals
 
-//I loved your girl
-
 let TheUsersManager = UsersManager()
 let TheShowsManager = ShowsManager()
 let TheEpisodesManager = EpisodesManager()
