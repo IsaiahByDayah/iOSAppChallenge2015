@@ -25,16 +25,15 @@ class MerchandiseManager {
     func getInventory(show: Show) -> [Merchandise] {
         var foundMerchandise: [Merchandise] = []
         for merchandise in inventory {
-            // TODO
-//            if merchandise.show.id == show.id {
-//                foundMerchandise.append(merchandise)
-//            }
+            if merchandise.show.id == show.id {
+                foundMerchandise.append(merchandise)
+            }
         }
         return foundMerchandise
     }
     
     func addMerchandise(name: String, withDescription: String, withThumbnail: UIImage, forShow: Show) -> Merchandise {
-        let merchandise = Merchandise(name: String, withDescription: String, withThumbnail: UIImage, forShow: Show)
+        let merchandise = Merchandise(name: name, description: withDescription, thumbnail: withThumbnail, show: forShow)
         inventory.append(merchandise)
         return merchandise
     }

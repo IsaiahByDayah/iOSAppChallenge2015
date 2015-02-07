@@ -10,12 +10,17 @@ import Foundation
 
 class Comment {
     
-    var id: Int = 0
-    var text: String = ""
+    private struct SubStruct {
+        static var id = 0
+    }
+    
+    let id = SubStruct.id++
+    
+    var text: String
     var user: User
     var shows: Show
     
-    init(text: String, user: User, shows: Show){
+    init(text: String, user: User, shows: Show) {
         self.text = text
         self.user = user
         self.shows = shows

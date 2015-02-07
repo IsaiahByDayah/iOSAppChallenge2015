@@ -1,5 +1,5 @@
 //
-//  UserManager.swift
+//  UsersManager.swift
 //  iOSAppChallenge2015
 //
 //  Created by Isaiah Smith on 2/6/15.

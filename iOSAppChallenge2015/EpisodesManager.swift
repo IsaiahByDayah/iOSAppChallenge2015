@@ -1,5 +1,5 @@
 //
-//  EpisodeManager.swift
+//  EpisodesManager.swift
 //  iOSAppChallenge2015
 //
 //  Created by Isaiah Smith on 2/6/15.
@@ -12,7 +12,7 @@ class EpisodesManager {
     
     var episodes: [Episode] = []
     
-    func getEpisdode(id: Int) -> Episode?{
+    func getEpisdode(id: Int) -> Episode? {
         for episode in episodes{
             if episode.id == id{
                 return episode
@@ -21,7 +21,7 @@ class EpisodesManager {
         return nil
     }
     
-    func addEpisode(name: String, withDescription: String, forShow: Show) -> Episode{
+    func addEpisode(name: String, withDescription: String, forShow: Show) -> Episode {
         var newEpisode = Episode(name: name, description: withDescription, shows: forShow)
         episodes.append(newEpisode)
         return newEpisode

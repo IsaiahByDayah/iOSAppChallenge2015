@@ -25,10 +25,9 @@ class PhotosManager {
     func getPhotos(show: Show) -> [Photo] {
         var foundPhotos: [Photo] = []
         for photo in photos {
-            // TODO
-//            if photo.show.id == show.id {
-//                foundPhotos.append(photo)
-//            }
+            if photo.show.id == show.id {
+                foundPhotos.append(photo)
+            }
         }
         return foundPhotos
     }
