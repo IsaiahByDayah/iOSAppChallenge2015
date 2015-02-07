@@ -10,4 +10,16 @@ import Foundation
 
 class Comment {
     
+    var id: Int = 0
+    var text: String = ""
+    var user: User
+    var shows: Show
+    
+    init(text: String, user: User, shows: Show){
+        self.text = text
+        self.user = user
+        self.shows = shows
+    }
+    
+    
 }

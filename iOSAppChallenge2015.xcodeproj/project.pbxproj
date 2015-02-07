@@ -91,7 +91,6 @@
 		61A2B6FC1A85CF2E00850234 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				61A2B6F61A85CEE300850234 /* MerchandiseManager.swift */,
 				61A2B6F81A85CF0100850234 /* Photo.swift */,
 				61A2B6FA1A85CF0F00850234 /* PhotosManager.swift */,
 				61A2B6EC1A85CE7000850234 /* Challenge.swift */,
@@ -105,6 +104,7 @@
 				61A2B6F01A85CE9F00850234 /* Comment.swift */,
 				61A2B6F21A85CEAC00850234 /* CommentsManager.swift */,
 				61A2B6F41A85CECA00850234 /* Merchandise.swift */,
+				61A2B6F61A85CEE300850234 /* MerchandiseManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
