@@ -10,3 +10,10 @@ import Foundation
 
 
 //MARK: Globals
+
+let TheUsersManager = UsersManager()
+let TheShowsManager = ShowsManager()
+let TheEpisodesManager = EpisodesManager()
+let TheCommentsManager = CommentsManager()
+let TheMerchandiseManager = MerchandiseManager()
+let ThePhotosManager = PhotosManager()

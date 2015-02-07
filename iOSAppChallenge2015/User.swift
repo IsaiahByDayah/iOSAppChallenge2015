@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class User {
     
@@ -18,6 +19,7 @@ class User {
     
     let username: String
     let password: String
+    let profilePic: UIImage
     
     var shows: [Show] = []
     var comments: [Comment] {
@@ -27,8 +29,9 @@ class User {
         return [] // TOTO
     }
     
-    init(username: String, password: String) {
+    init(username: String, password: String, profilePic: UIImage) {
         self.username = username
         self.password = password
+        self.profilePic = profilePic
     }
 }

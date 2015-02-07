@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		613326001A86C70E00F292E0 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */; };
+		613326021A86C71900F292E0 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326011A86C71900F292E0 /* SearchTabViewController.swift */; };
+		613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326031A86C72400F292E0 /* FeedTabViewController.swift */; };
 		61A2B6E11A85CDD900850234 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B6E01A85CDD900850234 /* User.swift */; };
 		61A2B6E31A85CDF600850234 /* UsersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B6E21A85CDF600850234 /* UsersManager.swift */; };
 		61A2B6E51A85CE2500850234 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B6E41A85CE2500850234 /* Show.swift */; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		613326011A86C71900F292E0 /* SearchTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
+		613326031A86C72400F292E0 /* FeedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
 		61A2B6E01A85CDD900850234 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		61A2B6E21A85CDF600850234 /* UsersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersManager.swift; sourceTree = "<group>"; };
 		61A2B6E41A85CE2500850234 /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
@@ -102,8 +108,6 @@
 				61A2B6E01A85CDD900850234 /* User.swift */,
 				61A2B6E21A85CDF600850234 /* UsersManager.swift */,
 				61A2B6E41A85CE2500850234 /* Show.swift */,
-				61A2B6FD1A85E91200850234 /* Globals.swift */,
-				61A2B6FF1A85EAB600850234 /* Constants.swift */,
 				61A2B6E61A85CE3500850234 /* ShowsManager.swift */,
 				61A2B6E81A85CE4A00850234 /* Episode.swift */,
 				61A2B6EA1A85CE5B00850234 /* EpisodesManager.swift */,
@@ -136,12 +140,15 @@
 		61A6DB391A85B40800624BB4 /* iOSAppChallenge2015 */ = {
 			isa = PBXGroup;
 			children = (
+				61A2B6FD1A85E91200850234 /* Globals.swift */,
+				61A2B6FF1A85EAB600850234 /* Constants.swift */,
 				61A6DB3C1A85B40800624BB4 /* AppDelegate.swift */,
 				61A6DB3E1A85B40800624BB4 /* RootViewController.swift */,
 				61A2B6FC1A85CF2E00850234 /* Models */,
 				61A6DB401A85B40800624BB4 /* DataViewController.swift */,
 				61A6DB421A85B40800624BB4 /* ModelController.swift */,
 				61A6DB441A85B40800624BB4 /* Main.storyboard */,
+				61C955E11A86C9DE00BBC75C /* Tab Controllers */,
 				61A6DB471A85B40800624BB4 /* Images.xcassets */,
 				61A6DB491A85B40800624BB4 /* LaunchScreen.xib */,
 				61A6DB3A1A85B40800624BB4 /* Supporting Files */,
@@ -172,6 +179,16 @@
 				61A6DB551A85B40800624BB4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61C955E11A86C9DE00BBC75C /* Tab Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */,
+				613326011A86C71900F292E0 /* SearchTabViewController.swift */,
+				613326031A86C72400F292E0 /* FeedTabViewController.swift */,
+			);
+			name = "Tab Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,17 +292,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */,
 				61A2B6FB1A85CF0F00850234 /* PhotosManager.swift in Sources */,
 				61A2B6E31A85CDF600850234 /* UsersManager.swift in Sources */,
 				61A2B6F71A85CEE300850234 /* MerchandiseManager.swift in Sources */,
 				61A6DB3F1A85B40800624BB4 /* RootViewController.swift in Sources */,
 				61A2B6F51A85CECA00850234 /* Merchandise.swift in Sources */,
+				613326001A86C70E00F292E0 /* HomeTabViewController.swift in Sources */,
 				61A6DB431A85B40800624BB4 /* ModelController.swift in Sources */,
 				61A2B6FE1A85E91200850234 /* Globals.swift in Sources */,
 				61A6DB411A85B40800624BB4 /* DataViewController.swift in Sources */,
 				61A2B6ED1A85CE7000850234 /* Challenge.swift in Sources */,
 				61A2B6E71A85CE3500850234 /* ShowsManager.swift in Sources */,
 				61A2B6EB1A85CE5B00850234 /* EpisodesManager.swift in Sources */,
+				613326021A86C71900F292E0 /* SearchTabViewController.swift in Sources */,
 				61A2B6EF1A85CE8200850234 /* ChallengesManager.swift in Sources */,
 				61A2B6F91A85CF0100850234 /* Photo.swift in Sources */,
 				61A2B6F11A85CE9F00850234 /* Comment.swift in Sources */,

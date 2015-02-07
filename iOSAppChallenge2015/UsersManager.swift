@@ -7,13 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 class UsersManager {
     
     var users: [User] = []
     
-    func addUser(username: String, password: String) -> User {
-        let user = User(username: username, password: password)
+    var currentUser: User? = nil
+    
+    func addUser(username: String, password: String, profilePic: UIImage) -> User {
+        let user = User(username: username, password: password, profilePic: profilePic)
         users.append(user)
         return user
     }
@@ -27,4 +30,22 @@ class UsersManager {
         return nil
     }
     
+    func getUser(username: String) -> User? {
+        for user in users {
+            if user.username == username {
+                return user
+            }
+        }
+        return nil
+    }
+    
+    func loginUser(username: String, password: String) -> User? {
+        if let user = getUser(username) {
+            if user.password == password {
+                currentUser = user
+                return currentUser
+            }
+        }
+        return nil
+    }
 }
