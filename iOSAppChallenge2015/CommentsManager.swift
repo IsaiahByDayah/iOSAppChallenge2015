@@ -22,21 +22,23 @@ class CommentsManager {
     }
     
     func getShowComments(show: Show) -> [Comment]?{
+        var newList: [Comment] = []
         for showComments in comments{
             if showComments.shows.id == show.id{
-                return comments
+                newList.append(showComments)
             }
         }
-        return nil
+        return newList
     }
     
     func getUserComments(user: User) -> [Comment]?{
+        var newList:[Comment] = []
         for userComments in comments{
             if userComments.user.id == user.id{
-                return userComments
+                newList.append(userComments)
             }
         }
-        return nil
+        return newList
     }
     
     func addComment(text: String, forUser: User, forShow: Show) -> Comment{
