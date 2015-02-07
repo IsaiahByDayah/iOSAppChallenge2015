@@ -10,14 +10,20 @@ import Foundation
 import UIKit
 
 class Show {
-    var name: String = ""
-    var id: Int = 0
-    var description: String = ""
-    var episodes: [Episode] = []
-    var thumbnail: UIImage
-    var status: String = ""
     
-    init(name: String, description: String, episodes: [Episode], thumbnail: UIImage, status: String ){
+    private struct SubStruct {
+        static var id = 0
+    }
+    
+    let id = SubStruct.id++
+    
+    var name: String
+    var description: String
+    var episodes: [Episode]
+    var thumbnail: UIImage
+    var status: Int
+    
+    init(name: String, description: String, episodes: [Episode], thumbnail: UIImage, status: Int){
         self.name = name
         self.description = description
         self.episodes = episodes

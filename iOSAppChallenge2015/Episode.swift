@@ -10,12 +10,17 @@ import Foundation
 
 class Episode {
     
-    var name: String = ""
-    var id: Int = 0
-    var description: String = ""
+    private struct SubStruct {
+        static var id = 0
+    }
+    
+    let id = SubStruct.id++
+    
+    var name: String
+    var description: String
     var shows: Show
     
-    init(name: String,description: String, shows: Show){
+    init(name: String, description: String, shows: Show) {
         self.name = name
         self.description = description
         self.shows = shows

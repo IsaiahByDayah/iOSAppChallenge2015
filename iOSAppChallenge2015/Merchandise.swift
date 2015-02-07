@@ -22,11 +22,11 @@ class Merchandise {
     let description: String
     let thumbnail: UIImage
     
-    init(name: String, withDescription: String, withThumbnail: UIImage, forShow: Show){
+    init(name: String, description: String, thumbnail: UIImage, show: Show) {
         self.name = name
-        self.description = withDescription
-        self.thumbnail = withThumbnail
-        self.show = forShow
+        self.description = description
+        self.thumbnail = thumbnail
+        self.show = show
     }
     
 }

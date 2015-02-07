@@ -12,7 +12,7 @@ class CommentsManager {
     
     var comments: [Comment] = []
     
-    func getComment(id: Int) -> Comment?{
+    func getComment(id: Int) -> Comment? {
         for comment in comments{
             if comment.id == id{
                 return comment
@@ -23,6 +23,7 @@ class CommentsManager {
     
     func getShowComments(show: Show) -> [Comment]?{
         var newList: [Comment] = []
+
         for showComments in comments{
             if showComments.shows.id == show.id{
                 newList.append(showComments)
@@ -33,6 +34,7 @@ class CommentsManager {
     
     func getUserComments(user: User) -> [Comment]?{
         var newList:[Comment] = []
+
         for userComments in comments{
             if userComments.user.id == user.id{
                 newList.append(userComments)
@@ -41,7 +43,7 @@ class CommentsManager {
         return newList
     }
     
-    func addComment(text: String, forUser: User, forShow: Show) -> Comment{
+    func addComment(text: String, forUser: User, forShow: Show) -> Comment {
         var newComment = Comment(text: text, user: forUser, shows: forShow)
         comments.append(newComment)
         return newComment

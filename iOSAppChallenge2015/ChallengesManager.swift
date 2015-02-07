@@ -30,10 +30,9 @@ class ChallengesManager {
     func getChallenges(show: Show) -> [Challenge] {
         var foundChallenges: [Challenge] = []
         for challenge in challenges {
-            // TODO
-//            if challenge.show.id == show.id {
-//                foundChallenges.append(challenge)
-//            }
+            if challenge.show.id == show.id {
+                foundChallenges.append(challenge)
+            }
         }
         return foundChallenges
     }
