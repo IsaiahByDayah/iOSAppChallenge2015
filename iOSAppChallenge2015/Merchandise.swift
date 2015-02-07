@@ -7,7 +7,26 @@
 //
 
 import Foundation
+import UIKit
 
 class Merchandise {
+    
+    private struct SubStruct {
+        static var id = 0
+    }
+    
+    let id = SubStruct.id++
+    
+    let show: Show
+    let name: String
+    let description: String
+    let thumbnail: UIImage
+    
+    init(name: String, withDescription: String, withThumbnail: UIImage, forShow: Show){
+        self.name = name
+        self.description = withDescription
+        self.thumbnail = withThumbnail
+        self.show = forShow
+    }
     
 }
