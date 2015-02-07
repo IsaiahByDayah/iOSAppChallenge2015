@@ -7,7 +7,35 @@
 //
 
 import Foundation
+import UIKit
 
 class MerchandiseManager {
     
+    var inventory: [Merchandise] = []
+    
+    func getMerchandise(id: Int) -> Merchandise? {
+        for merchandise in inventory {
+            if merchandise.id == id {
+                return merchandise
+            }
+        }
+        return nil
+    }
+    
+    func getInventory(show: Show) -> [Merchandise] {
+        var foundMerchandise: [Merchandise] = []
+        for merchandise in inventory {
+            // TODO
+//            if merchandise.show.id == show.id {
+//                foundMerchandise.append(merchandise)
+//            }
+        }
+        return foundMerchandise
+    }
+    
+    func addMerchandise(name: String, withDescription: String, withThumbnail: UIImage, forShow: Show) -> Merchandise {
+        let merchandise = Merchandise(name: String, withDescription: String, withThumbnail: UIImage, forShow: Show)
+        inventory.append(merchandise)
+        return merchandise
+    }
 }
