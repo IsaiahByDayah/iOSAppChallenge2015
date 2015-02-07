@@ -74,8 +74,6 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
 // Fine
 
-//Wherever
-
 
 }
 
