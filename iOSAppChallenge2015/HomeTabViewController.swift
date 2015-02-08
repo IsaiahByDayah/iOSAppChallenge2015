@@ -31,20 +31,100 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: view.frame.size.height)
         
-        let containerSize = CGSize(width: scrollView.frame.size.width, height: (scrollView.frame.size.height * 10.0)) // Make the contentSize bigger than needed
+        let containerSize = CGSize(width: scrollView.frame.size.width, height: (scrollView.frame.size.height * 1000.0)) // Make the contentSize bigger than needed
         
         scrollView.contentSize = containerSize
         
         let scrollViewWidth = scrollView.contentSize.width
         
-        
         // Mark: Implement what the page looks like below here
         
-        /* Examples for adding elements
+        // Examples for adding elements
         
+        
+        let bannerView = UIView(frame: CGRect(x: 0, y: 0, width: scrollViewWidth, height: 135))
+        //enter show thumbnail in banner
+        for show in TheUsersManager.currentUser!.shows{
+        }
+        bannerView.backgroundColor = UIColor.blueColor()
+        scrollView.addSubview(bannerView)
+    
+        var circle = UIImageView(frame: CGRect(x: 130, y: 70, width: 120, height: 120))
+        circle.layer.cornerRadius = CGFloat(circle.frame.size.width / 2.0)
+        circle.clipsToBounds = true
+        circle.backgroundColor = UIColor.redColor()
+        scrollView.addSubview(circle)
+        
+        let section1 = UILabel(frame: CGRect(x: 15, y: 190, width: scrollViewWidth, height: 15))
+        section1.text = "MyShows"
+        scrollView.addSubview(section1)
+        
+        let show1 = UIView(frame: CGRect(x: 15, y: 215, width: scrollViewWidth/3.5, height:scrollViewWidth/3.5))
+        show1.backgroundColor = UIColor.redColor()
+        scrollView.addSubview(show1)
+        
+        let show2 = UIView(frame: CGRect(x: 135, y: 215, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
+        show2.backgroundColor = UIColor.redColor()
+        scrollView.addSubview(show2)
+        
+        let show3 = UIView(frame: CGRect(x: 255, y: 215, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
+        show3.backgroundColor = UIColor.redColor()
+        scrollView.addSubview(show3)
+        
+        let show4 = UIView(frame: CGRect(x: 375, y: 215, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
+        show4.backgroundColor = UIColor.redColor()
+        scrollView.addSubview(show4)
+        
+        let section2 = UILabel(frame: CGRect(x: 15, y: 345, width: scrollViewWidth, height: 20))
+        section2.text = "Challenge Trophies"
+        scrollView.addSubview(section2)
+        
+        let challengeTrophie1 = UIView(frame: CGRect(x: 15, y: 375, width: scrollViewWidth/2, height: 170))
+        challengeTrophie1.backgroundColor = UIColor.greenColor()
+        scrollView.addSubview(challengeTrophie1)
+        
+        let challengeTrophie2 = UIView(frame: CGRect(x: 35+(scrollViewWidth/2), y: 375, width: scrollViewWidth/2, height: 170))
+        challengeTrophie2.backgroundColor = UIColor.greenColor()
+        scrollView.addSubview(challengeTrophie2)
+        
+        let section3 = UILabel(frame: CGRect(x: 15, y: 555, width: scrollViewWidth, height: 20))
+        section3.text = "Discussion Posts"
+        scrollView.addSubview(section3)
+        
+        let discussionPost1 = UIView(frame: CGRect(x: 15, y: 585, width: scrollViewWidth/2, height: 165))
+        discussionPost1.backgroundColor = UIColor.yellowColor()
+        scrollView.addSubview(discussionPost1)
+        
+        let discussionPost2 = UIView(frame: CGRect(x: 35+(scrollViewWidth/2), y: 585, width: scrollViewWidth/2, height: 165))
+        discussionPost2.backgroundColor = UIColor.yellowColor()
+        scrollView.addSubview(discussionPost2)
+        
+        let section4 = UILabel(frame: CGRect(x: 15, y: 760, width: scrollViewWidth, height: 20))
+        section4.text = "Photos"
+        scrollView.addSubview(section4)
+        
+        let pic1 = UIView(frame: CGRect(x: 15, y: 790, width: 115, height: 105))
+        pic1.backgroundColor = UIColor.orangeColor()
+        scrollView.addSubview(pic1)
+        
+        let pic2 = UIView(frame: CGRect(x: 145, y: 790, width: 115, height: 105))
+        pic2.backgroundColor = UIColor.orangeColor()
+        scrollView.addSubview(pic2)
+        
+        let pic3 = UIView(frame: CGRect(x: 275, y: 790, width: 115, height: 105))
+        pic3.backgroundColor = UIColor.orangeColor()
+        scrollView.addSubview(pic3)
+        
+        /*
+    
         let redView = UIView(frame: CGRect(x: 0, y: 100, width: scrollView.contentSize.width / 2.0, height: 200))
         redView.backgroundColor = UIColor.redColor()
         scrollView.addSubview(redView)
+        
+        let yellowView = UIView(frame: CGRect(x: 0, y: 200, width: scrollViewWidth, height: 200))
+        yellowView.backgroundColor = UIColor.blueColor()
+        scrollView.addSubview(yellowView)
+        
         
         let blackView = UIView(frame: CGRect(x: 0, y: redView.bounds.size.height - 100, width: redView.bounds.width / 2.0, height: 100))
         blackView.backgroundColor = UIColor.blackColor()
