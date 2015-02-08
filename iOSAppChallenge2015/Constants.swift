@@ -24,5 +24,5 @@ let OrangeColor = UIColor(red: CGFloat(237)/255.0, green: CGFloat(175)/255.0, bl
 let NavColor = UIColor.blackColor()
 
 let SideBuffer:CGFloat = 20.0
-let SectionVerticleBuffer: CGFloat = 30.0
+let SectionVerticleBuffer: CGFloat = 25.0
 let ShortVerticleBuffer: CGFloat = 5.0

@@ -39,42 +39,11 @@ class FeedTabViewController: UIViewController, UIScrollViewDelegate {
         
         // Mark: Implement what the page looks like below here
         
-        /* Examples for adding elements
+//        let blueView = UIView(frame: CGRect(x: 0, y: 0, width: scrollView.contentSize.width, height: 135))
+//        blueView.backgroundColor = UIColor.blueColor()
+//        scrollView.addSubview(blueView)
         
-        let redView = UIView(frame: CGRect(x: 0, y: 100, width: scrollView.contentSize.width / 2.0, height: 200))
-        redView.backgroundColor = UIColor.redColor()
-        scrollView.addSubview(redView)
-        
-        let blackView = UIView(frame: CGRect(x: 0, y: redView.bounds.size.height - 100, width: redView.bounds.width / 2.0, height: 100))
-        blackView.backgroundColor = UIColor.blackColor()
-        redView.addSubview(blackView)
-        
-        
-        
-        let blueView = UIView(frame: CGRect(x: 0, y: 300, width: scrollView.contentSize.width / 2.0, height: 200))
-        blueView.backgroundColor = UIColor.blueColor()
-        scrollView.addSubview(blueView
-        )
-        
-        let purpleView = UIView(frame: CGRect(x: 0, y: blueView.bounds.size.height - 100, width: blueView.bounds.width / 2.0, height: 100))
-        purpleView.backgroundColor = UIColor.purpleColor()
-        blueView.addSubview(purpleView)
-        
-        
-        
-        let browView = UIView(frame: CGRect(x: 0, y: 500, width: scrollView.contentSize.width / 2.0, height: 200))
-        browView.backgroundColor = UIColor.brownColor()
-        scrollView.addSubview(browView)
-        
-        let greyView = UIView(frame: CGRect(x: 0, y: browView.bounds.size.height - 100, width: browView.bounds.width / 2.0, height: 100))
-        greyView.backgroundColor = UIColor.grayColor()
-        browView.addSubview(greyView)
-        
-        */
-        
-        let blueView = UIView(frame: CGRect(x: 0, y: 0, width: scrollView.contentSize.width, height: 135))
-        blueView.backgroundColor = UIColor.blueColor()
-        scrollView.addSubview(blueView)
+        let blueView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         
         // Trending Shows
         
@@ -220,13 +189,13 @@ class FeedTabViewController: UIViewController, UIScrollViewDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "presentShowViewControllerFromFeed" {
-            println("Going to show view controller")
+//            println("Going to show view controller")
             let navViewController = segue.destinationViewController as UINavigationController
             let showViewController = navViewController.viewControllers[0] as ShowViewController
             
-            println("Got destination")
+//            println("Got destination")
             showViewController.show = selectedShow?
-            println("set show for destination")
+//            println("set show for destination")
         }
     }
 }

@@ -20,7 +20,7 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        imageView.contentMode = UIViewContentMode.ScaleAspectFit
+        imageView.contentMode = UIViewContentMode.ScaleAspectFill
         imageView.image = UIImage(named: "Camera_icon.png")
         imageView.layer.cornerRadius = CGFloat(imageView.frame.size.width / 2.0)
         imageView.clipsToBounds = true
