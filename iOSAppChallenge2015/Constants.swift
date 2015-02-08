@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 //MARK: Constants
@@ -18,3 +19,9 @@ struct ShowStatus {
     static let OnHiatus = 2
     static let Complete = 3
 }
+
+let OrangeColor = UIColor(red: CGFloat(237)/255.0, green: CGFloat(175)/255.0, blue: CGFloat(20)/255.0, alpha: CGFloat(1.0))
+
+let SideBuffer:CGFloat = 10.0
+let SectionVerticleBuffer: CGFloat = 15.0
+let ShortVerticleBuffer: CGFloat = 5.0
