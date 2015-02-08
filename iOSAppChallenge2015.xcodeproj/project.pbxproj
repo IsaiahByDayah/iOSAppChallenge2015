@@ -10,6 +10,7 @@
 		613326001A86C70E00F292E0 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */; };
 		613326021A86C71900F292E0 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326011A86C71900F292E0 /* SearchTabViewController.swift */; };
 		613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326031A86C72400F292E0 /* FeedTabViewController.swift */; };
+		617B6A5F1A86E5D8003D5718 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B6A5E1A86E5D8003D5718 /* LoginViewController.swift */; };
 		61A2B6E11A85CDD900850234 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B6E01A85CDD900850234 /* User.swift */; };
 		61A2B6E31A85CDF600850234 /* UsersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B6E21A85CDF600850234 /* UsersManager.swift */; };
 		61A2B6E51A85CE2500850234 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B6E41A85CE2500850234 /* Show.swift */; };
@@ -27,13 +28,11 @@
 		61A2B6FE1A85E91200850234 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B6FD1A85E91200850234 /* Globals.swift */; };
 		61A2B7001A85EAB600850234 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B6FF1A85EAB600850234 /* Constants.swift */; };
 		61A6DB3D1A85B40800624BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A6DB3C1A85B40800624BB4 /* AppDelegate.swift */; };
-		61A6DB3F1A85B40800624BB4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A6DB3E1A85B40800624BB4 /* RootViewController.swift */; };
-		61A6DB411A85B40800624BB4 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A6DB401A85B40800624BB4 /* DataViewController.swift */; };
-		61A6DB431A85B40800624BB4 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A6DB421A85B40800624BB4 /* ModelController.swift */; };
 		61A6DB461A85B40800624BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A6DB441A85B40800624BB4 /* Main.storyboard */; };
 		61A6DB481A85B40800624BB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A6DB471A85B40800624BB4 /* Images.xcassets */; };
 		61A6DB4B1A85B40800624BB4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A6DB491A85B40800624BB4 /* LaunchScreen.xib */; };
 		61A6DB571A85B40800624BB4 /* iOSAppChallenge2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A6DB561A85B40800624BB4 /* iOSAppChallenge2015Tests.swift */; };
+		61C955E41A86DC6C00BBC75C /* Please write me a song.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C955E31A86DBF900BBC75C /* Please write me a song.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +49,7 @@
 		613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		613326011A86C71900F292E0 /* SearchTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
 		613326031A86C72400F292E0 /* FeedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
+		617B6A5E1A86E5D8003D5718 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61A2B6E01A85CDD900850234 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		61A2B6E21A85CDF600850234 /* UsersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersManager.swift; sourceTree = "<group>"; };
 		61A2B6E41A85CE2500850234 /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
@@ -69,15 +69,13 @@
 		61A6DB371A85B40800624BB4 /* iOSAppChallenge2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAppChallenge2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A6DB3B1A85B40800624BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61A6DB3C1A85B40800624BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61A6DB3E1A85B40800624BB4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		61A6DB401A85B40800624BB4 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		61A6DB421A85B40800624BB4 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		61A6DB451A85B40800624BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61A6DB471A85B40800624BB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		61A6DB4A1A85B40800624BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		61A6DB501A85B40800624BB4 /* iOSAppChallenge2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAppChallenge2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A6DB551A85B40800624BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61A6DB561A85B40800624BB4 /* iOSAppChallenge2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppChallenge2015Tests.swift; sourceTree = "<group>"; };
+		61C955E31A86DBF900BBC75C /* Please write me a song.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Please write me a song.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,14 +138,13 @@
 		61A6DB391A85B40800624BB4 /* iOSAppChallenge2015 */ = {
 			isa = PBXGroup;
 			children = (
+				61A6DB441A85B40800624BB4 /* Main.storyboard */,
+				61A6DB3C1A85B40800624BB4 /* AppDelegate.swift */,
 				61A2B6FD1A85E91200850234 /* Globals.swift */,
 				61A2B6FF1A85EAB600850234 /* Constants.swift */,
-				61A6DB3C1A85B40800624BB4 /* AppDelegate.swift */,
-				61A6DB3E1A85B40800624BB4 /* RootViewController.swift */,
+				617B6A5E1A86E5D8003D5718 /* LoginViewController.swift */,
 				61A2B6FC1A85CF2E00850234 /* Models */,
-				61A6DB401A85B40800624BB4 /* DataViewController.swift */,
-				61A6DB421A85B40800624BB4 /* ModelController.swift */,
-				61A6DB441A85B40800624BB4 /* Main.storyboard */,
+				61C955E21A86DBEC00BBC75C /* Resources */,
 				61C955E11A86C9DE00BBC75C /* Tab Controllers */,
 				61A6DB471A85B40800624BB4 /* Images.xcassets */,
 				61A6DB491A85B40800624BB4 /* LaunchScreen.xib */,
@@ -189,6 +186,22 @@
 				613326031A86C72400F292E0 /* FeedTabViewController.swift */,
 			);
 			name = "Tab Controllers";
+			sourceTree = "<group>";
+		};
+		61C955E21A86DBEC00BBC75C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61C955E51A86DC7100BBC75C /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		61C955E51A86DC7100BBC75C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				61C955E31A86DBF900BBC75C /* Please write me a song.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61A6DB461A85B40800624BB4 /* Main.storyboard in Resources */,
+				61C955E41A86DC6C00BBC75C /* Please write me a song.ttf in Resources */,
 				61A6DB4B1A85B40800624BB4 /* LaunchScreen.xib in Resources */,
 				61A6DB481A85B40800624BB4 /* Images.xcassets in Resources */,
 			);
@@ -292,16 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617B6A5F1A86E5D8003D5718 /* LoginViewController.swift in Sources */,
 				613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */,
 				61A2B6FB1A85CF0F00850234 /* PhotosManager.swift in Sources */,
 				61A2B6E31A85CDF600850234 /* UsersManager.swift in Sources */,
 				61A2B6F71A85CEE300850234 /* MerchandiseManager.swift in Sources */,
-				61A6DB3F1A85B40800624BB4 /* RootViewController.swift in Sources */,
 				61A2B6F51A85CECA00850234 /* Merchandise.swift in Sources */,
 				613326001A86C70E00F292E0 /* HomeTabViewController.swift in Sources */,
-				61A6DB431A85B40800624BB4 /* ModelController.swift in Sources */,
 				61A2B6FE1A85E91200850234 /* Globals.swift in Sources */,
-				61A6DB411A85B40800624BB4 /* DataViewController.swift in Sources */,
 				61A2B6ED1A85CE7000850234 /* Challenge.swift in Sources */,
 				61A2B6E71A85CE3500850234 /* ShowsManager.swift in Sources */,
 				61A2B6EB1A85CE5B00850234 /* EpisodesManager.swift in Sources */,
