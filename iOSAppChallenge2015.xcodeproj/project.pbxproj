@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03AEA7471A86EA3E0014DAFB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7461A86EA3E0014DAFB /* logo.png */; };
+		03AEA74A1A86EA850014DAFB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7481A86EA850014DAFB /* icon@2x.png */; };
+		03AEA74B1A86EA850014DAFB /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7491A86EA850014DAFB /* icon@3x.png */; };
 		613326001A86C70E00F292E0 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */; };
 		613326021A86C71900F292E0 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326011A86C71900F292E0 /* SearchTabViewController.swift */; };
 		613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326031A86C72400F292E0 /* FeedTabViewController.swift */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03AEA7461A86EA3E0014DAFB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		03AEA7481A86EA850014DAFB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		03AEA7491A86EA850014DAFB /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
 		613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		613326011A86C71900F292E0 /* SearchTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
 		613326031A86C72400F292E0 /* FeedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +102,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03AEA7451A86EA150014DAFB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				03AEA7481A86EA850014DAFB /* icon@2x.png */,
+				03AEA7491A86EA850014DAFB /* icon@3x.png */,
+				03AEA7461A86EA3E0014DAFB /* logo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		61A2B6FC1A85CF2E00850234 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +207,7 @@
 		61C955E21A86DBEC00BBC75C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				03AEA7451A86EA150014DAFB /* Images */,
 				61C955E51A86DC7100BBC75C /* Fonts */,
 			);
 			name = Resources;
@@ -286,9 +303,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				61A6DB461A85B40800624BB4 /* Main.storyboard in Resources */,
+				03AEA74B1A86EA850014DAFB /* icon@3x.png in Resources */,
+				03AEA7471A86EA3E0014DAFB /* logo.png in Resources */,
 				61C955E41A86DC6C00BBC75C /* Please write me a song.ttf in Resources */,
 				61A6DB4B1A85B40800624BB4 /* LaunchScreen.xib in Resources */,
 				61A6DB481A85B40800624BB4 /* Images.xcassets in Resources */,
+				03AEA74A1A86EA850014DAFB /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
