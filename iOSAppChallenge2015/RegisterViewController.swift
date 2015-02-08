@@ -48,4 +48,8 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
         imageSet = true
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func backToLogInScreen(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
