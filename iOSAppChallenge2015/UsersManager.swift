@@ -39,13 +39,13 @@ class UsersManager {
         return nil
     }
     
-    func loginUser(username: String, password: String) -> User? {
+    func loginUser(username: String, password: String) -> Bool {
         if let user = getUser(username) {
             if user.password == password {
                 currentUser = user
-                return currentUser
+                return true
             }
         }
-        return nil
+        return false
     }
 }

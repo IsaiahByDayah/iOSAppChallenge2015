@@ -20,27 +20,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
-        
-    }
-    
-    func textFieldDidEndEditing(textField: UITextField) {
-        
-    }
-    
-    func animateTextField(textFielf: UITextField) {
-        let moveDistance = 80
-        let moveDuration = 0.3
-        
-        
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField.restorationIdentifier == "usernameTextField" {
+            textField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
+        } else if textField.restorationIdentifier == "passwordTextField" {
+            textField.resignFirstResponder()
+            login(textField)
+        }
+        return false
     }
     
     @IBAction func login(sender: AnyObject) {
-        
+        if TheUsersManager.loginUser(usernameTextField.text, password: passwordTextField.text) {
+            println("User logged in")
+            let tabbedViewController = MainTabViewController()
+            presentViewController(tabbedViewController, animated: true, completion: nil)
+        } else {
+            usernameTextField.text = ""
+            passwordTextField.text = ""
+        }
     }
     
     @IBAction func register(sender: AnyObject) {
-        
+        performSegueWithIdentifier("loginComplete", sender: self)
     }
     
 }

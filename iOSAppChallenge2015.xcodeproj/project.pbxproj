@@ -36,6 +36,7 @@
 		61A6DB4B1A85B40800624BB4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A6DB491A85B40800624BB4 /* LaunchScreen.xib */; };
 		61A6DB571A85B40800624BB4 /* iOSAppChallenge2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A6DB561A85B40800624BB4 /* iOSAppChallenge2015Tests.swift */; };
 		61C955E41A86DC6C00BBC75C /* Please write me a song.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C955E31A86DBF900BBC75C /* Please write me a song.ttf */; };
+		61F8CF111A86FC9C00B41A4D /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8CF101A86FC9C00B41A4D /* MainTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		61A6DB551A85B40800624BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61A6DB561A85B40800624BB4 /* iOSAppChallenge2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppChallenge2015Tests.swift; sourceTree = "<group>"; };
 		61C955E31A86DBF900BBC75C /* Please write me a song.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Please write me a song.ttf"; sourceTree = "<group>"; };
+		61F8CF101A86FC9C00B41A4D /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		61C955E11A86C9DE00BBC75C /* Tab Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				61F8CF101A86FC9C00B41A4D /* MainTabViewController.swift */,
 				613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */,
 				613326011A86C71900F292E0 /* SearchTabViewController.swift */,
 				613326031A86C72400F292E0 /* FeedTabViewController.swift */,
@@ -343,6 +346,7 @@
 				61A2B6F11A85CE9F00850234 /* Comment.swift in Sources */,
 				61A2B6E51A85CE2500850234 /* Show.swift in Sources */,
 				61A2B7001A85EAB600850234 /* Constants.swift in Sources */,
+				61F8CF111A86FC9C00B41A4D /* MainTabViewController.swift in Sources */,
 				61A2B6E11A85CDD900850234 /* User.swift in Sources */,
 				61A2B6F31A85CEAC00850234 /* CommentsManager.swift in Sources */,
 				61A2B6E91A85CE4A00850234 /* Episode.swift in Sources */,
