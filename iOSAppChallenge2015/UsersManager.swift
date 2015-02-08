@@ -15,10 +15,13 @@ class UsersManager {
     
     var currentUser: User? = nil
     
-    func addUser(username: String, password: String, profilePic: UIImage) -> User {
-        let user = User(username: username, password: password, profilePic: profilePic)
-        users.append(user)
-        return user
+    func addUser(username: String, password: String, profilePic: UIImage?) -> Bool {
+        if getUser(username) == nil {
+            let user = User(username: username, password: password, profilePic: profilePic?)
+            users.append(user)
+            return true
+        }
+        return false
     }
     
     func getUser(id: Int) -> User? {
@@ -39,13 +42,13 @@ class UsersManager {
         return nil
     }
     
-    func loginUser(username: String, password: String) -> User? {
+    func loginUser(username: String, password: String) -> Bool {
         if let user = getUser(username) {
             if user.password == password {
                 currentUser = user
-                return currentUser
+                return true
             }
         }
-        return nil
+        return false
     }
 }
