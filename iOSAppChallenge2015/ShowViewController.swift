@@ -18,6 +18,8 @@ class ShowViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        title = show!.name
     }
 
     override func viewDidAppear(animated: Bool) {

@@ -19,7 +19,7 @@ class User {
     
     let username: String
     let password: String
-    let profilePic: UIImage?
+    var profilePic: UIImage?
     
     var shows: [Show] = []
     var comments: [Comment] {

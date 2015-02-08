@@ -72,21 +72,23 @@ class FeedTabViewController: UIViewController, UIScrollViewDelegate {
         
         */
         
-        let redView = UIView(frame: CGRect(x: 0, y: 0, width: scrollView.contentSize.width, height: scrollViewWidth * 0.5))
-        redView.backgroundColor = UIColor.redColor()
-        scrollView.addSubview(redView)
+        let blueView = UIView(frame: CGRect(x: 0, y: 0, width: scrollView.contentSize.width, height: 135))
+        blueView.backgroundColor = UIColor.blueColor()
+        scrollView.addSubview(blueView)
         
         // Trending Shows
         
-        let trendingShowsLabel = UILabel(frame: CGRect(x: SideBuffer, y: redView.frame.maxY + SectionVerticleBuffer, width: scrollViewWidth, height: 20))
+        let trendingShowsLabel = UILabel(frame: CGRect(x: SideBuffer, y: blueView.frame.maxY + SectionVerticleBuffer, width: scrollViewWidth, height: 20))
         trendingShowsLabel.text = "Trending Shows"
         scrollView.addSubview(trendingShowsLabel)
         
-        let trendingShowsVerticleScrollView = HorizontalScrollView(frame: CGRect(x: 0, y: trendingShowsLabel.frame.maxY + ShortVerticleBuffer, width: scrollViewWidth, height: scrollViewWidth /
+        let trendingShowsHorizontalScrollView = HorizontalScrollView(frame: CGRect(x: SideBuffer / 2.0, y: trendingShowsLabel.frame.maxY + ShortVerticleBuffer, width: scrollViewWidth - SideBuffer
+            , height: scrollViewWidth /
             3.5))
-        trendingShowsVerticleScrollView.backgroundColor = UIColor.blueColor()
-        trendingShowsVerticleScrollView.contentSize.width = scrollViewWidth * 2.0
-        scrollView.addSubview(trendingShowsVerticleScrollView)
+        trendingShowsHorizontalScrollView.clipsToBounds = false
+//        trendingShowsVerticleScrollView.backgroundColor = UIColor.blueColor()
+        trendingShowsHorizontalScrollView.contentSize.width = scrollViewWidth * 2.0
+        scrollView.addSubview(trendingShowsHorizontalScrollView)
         // Build Verticle Scroll View
         
         let trendingShows = TheShowsManager.getTrendingShows()
@@ -104,48 +106,90 @@ class FeedTabViewController: UIViewController, UIScrollViewDelegate {
                 size: CGSize(width: scrollViewWidth / 3.5, height: scrollViewWidth / 3.5)
             )
             showTile.backgroundColor = UIColor.yellowColor()
-            trendingShowsVerticleScrollView.addSubview(showTile)
+            trendingShowsHorizontalScrollView.addSubview(showTile)
             indexOfLastShow += 1.0
         }
         
-        trendingShowsVerticleScrollView.compactContentSize()
+        trendingShowsHorizontalScrollView.compactContentSize()
         // End Build
         
         // Trending Challenges
         
-//        let trendingShowsLabel = UILabel(frame: CGRect(x: SideBuffer, y: redView.frame.maxY + SectionVerticleBuffer, width: scrollViewWidth, height: 20))
-//        trendingShowsLabel.text = "Trending Shows"
-//        scrollView.addSubview(trendingShowsLabel)
-//        
-//        let trendingShowsVerticleScrollView = HorizontalScrollView(frame: CGRect(x: 0, y: trendingShowsLabel.frame.maxY + ShortVerticleBuffer, width: scrollViewWidth, height: scrollViewWidth /
-//            3.5))
-//        trendingShowsVerticleScrollView.backgroundColor = UIColor.blueColor()
-//        trendingShowsVerticleScrollView.contentSize.width = scrollViewWidth * 2.0
-//        scrollView.addSubview(trendingShowsVerticleScrollView)
-//        // Build Verticle Scroll View
-//        
-//        let trendingShows = TheShowsManager.getTrendingShows()
-//        var lastShow: [ClickableShowTileImageView]?
-//        var indexOfLastShow:CGFloat = 0.0
-//        for show in trendingShows {
-//            let showTile = ClickableShowTileImageView(image: show.thumbnail, andShow: show)
-//            
-//            showTile.frame = CGRect(
-//                origin: CGPoint(x: (SideBuffer * indexOfLastShow) + (scrollViewWidth / 3.5 * indexOfLastShow), y: 0),
-//                size: CGSize(width: scrollViewWidth / 3.5, height: scrollViewWidth / 3.5)
-//            )
-//            showTile.backgroundColor = UIColor.yellowColor()
-//            trendingShowsVerticleScrollView.addSubview(showTile)
-//            indexOfLastShow += 1.0
-//        }
-//        
-//        trendingShowsVerticleScrollView.compactContentSize()
-//        // End Build
+        let trendingChallengesLabel = UILabel(frame: CGRect(x: SideBuffer, y: trendingShowsHorizontalScrollView.frame.maxY + SectionVerticleBuffer, width: scrollViewWidth, height: 20))
+        trendingChallengesLabel.text = "Trending Challenges"
+        scrollView.addSubview(trendingChallengesLabel)
+        
+        let trendingChallengesHorizontalScrollView = HorizontalScrollView(frame: CGRect(x: SideBuffer / 2.0, y: trendingChallengesLabel.frame.maxY + ShortVerticleBuffer, width: scrollViewWidth - SideBuffer, height: scrollViewWidth /
+            2))
+        trendingChallengesHorizontalScrollView.clipsToBounds = false
+//        trendingChallengesHorizontalScrollView.backgroundColor = UIColor.greenColor()
+        trendingChallengesHorizontalScrollView.contentSize.width = scrollViewWidth * 3.0
+        scrollView.addSubview(trendingChallengesHorizontalScrollView)
+        // Build Verticle Scroll View
+        
+        for var i: CGFloat = 0.0; i <= 4.0; i+=1.0 {
+            let challengeTile = UIImageView(frame: CGRect(origin: CGPoint(x: (SideBuffer * i) + (scrollViewWidth / 2.0 * i), y: 0), size: CGSize(width: scrollViewWidth / 2.0, height: scrollViewWidth / 2.0)))
+            
+            challengeTile.backgroundColor = UIColor.grayColor()
+            trendingChallengesHorizontalScrollView.addSubview(challengeTile)
+        }
+        
+        trendingChallengesHorizontalScrollView.compactContentSize()
+        // End Build
+        
+        // Trending Photos
+        
+        let trendingPhotosLabel = UILabel(frame: CGRect(x: SideBuffer, y: trendingChallengesHorizontalScrollView.frame.maxY + SectionVerticleBuffer, width: scrollViewWidth, height: 20))
+        trendingPhotosLabel.text = "Trending Photos"
+        scrollView.addSubview(trendingPhotosLabel)
+        
+        let trendingPhotosHorizontalScrollView = HorizontalScrollView(frame: CGRect(x: SideBuffer / 2.0, y: trendingPhotosLabel.frame.maxY + ShortVerticleBuffer, width: scrollViewWidth - SideBuffer, height: scrollViewWidth /
+            2.75))
+        trendingPhotosHorizontalScrollView.clipsToBounds = false
+        //        trendingChallengesHorizontalScrollView.backgroundColor = UIColor.greenColor()
+        trendingPhotosHorizontalScrollView.contentSize.width = scrollViewWidth * 3.0
+        scrollView.addSubview(trendingPhotosHorizontalScrollView)
+        // Build Verticle Scroll View
+        
+        for var i: CGFloat = 0.0; i <= 5.0; i+=1.0 {
+            let photoTile = UIImageView(frame: CGRect(origin: CGPoint(x: (SideBuffer * i) + (scrollViewWidth / 2.75 * i), y: 0), size: CGSize(width: scrollViewWidth / 2.75, height: scrollViewWidth / 2.75)))
+            
+            photoTile.backgroundColor = UIColor.orangeColor()
+            trendingPhotosHorizontalScrollView.addSubview(photoTile)
+        }
+        
+        trendingPhotosHorizontalScrollView.compactContentSize()
+        // End Build
+        
+        // Trending Discussions
+        
+        let trendingDiscussionsLabel = UILabel(frame: CGRect(x: SideBuffer, y: trendingPhotosHorizontalScrollView.frame.maxY + SectionVerticleBuffer, width: scrollViewWidth, height: 20))
+        trendingDiscussionsLabel.text = "Trending Discussions"
+        scrollView.addSubview(trendingDiscussionsLabel)
+        
+        let trendingDiscussionsHorizontalScrollView = HorizontalScrollView(frame: CGRect(x: SideBuffer / 2.25, y: trendingDiscussionsLabel.frame.maxY + ShortVerticleBuffer, width: scrollViewWidth - SideBuffer, height: scrollViewWidth /
+            2.25))
+        trendingDiscussionsHorizontalScrollView.clipsToBounds = false
+        //        trendingChallengesHorizontalScrollView.backgroundColor = UIColor.greenColor()
+        trendingDiscussionsHorizontalScrollView.contentSize.width = scrollViewWidth * 3.0
+        scrollView.addSubview(trendingDiscussionsHorizontalScrollView)
+        // Build Verticle Scroll View
+        
+        for var i: CGFloat = 0.0; i <= 5.0; i+=1.0 {
+            let discussionTile = UIImageView(frame: CGRect(origin: CGPoint(x: (SideBuffer * i) + (scrollViewWidth / 2.25 * i), y: 0), size: CGSize(width: scrollViewWidth / 2.25, height: scrollViewWidth / 2.25)))
+            
+            discussionTile.backgroundColor = UIColor.greenColor()
+            trendingDiscussionsHorizontalScrollView.addSubview(discussionTile)
+        }
+        
+        trendingDiscussionsHorizontalScrollView.compactContentSize()
+        // End Build
         
         
         // Mark: Implement what the page looks like above here
         
         setScrollHeight() // Compacts the page
+        scrollView.contentSize.height += SectionVerticleBuffer
     }
     
     func showTileTapped(gesture: UIGestureRecognizer) {

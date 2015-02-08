@@ -11,6 +11,7 @@
 		03AEA74A1A86EA850014DAFB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7481A86EA850014DAFB /* icon@2x.png */; };
 		03AEA74B1A86EA850014DAFB /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7491A86EA850014DAFB /* icon@3x.png */; };
 		6103E8021A87596A00D663B4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6103E8011A87596A00D663B4 /* RegisterViewController.swift */; };
+		6106B5121A8824F500C8E044 /* Camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6106B5111A8824F500C8E044 /* Camera_icon.png */; };
 		613326001A86C70E00F292E0 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */; };
 		613326021A86C71900F292E0 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326011A86C71900F292E0 /* SearchTabViewController.swift */; };
 		613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326031A86C72400F292E0 /* FeedTabViewController.swift */; };
@@ -58,6 +59,7 @@
 		03AEA7481A86EA850014DAFB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		03AEA7491A86EA850014DAFB /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
 		6103E8011A87596A00D663B4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6106B5111A8824F500C8E044 /* Camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera_icon.png; sourceTree = "<group>"; };
 		613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		613326011A86C71900F292E0 /* SearchTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
 		613326031A86C72400F292E0 /* FeedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		03AEA7451A86EA150014DAFB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6106B5111A8824F500C8E044 /* Camera_icon.png */,
 				03AEA7481A86EA850014DAFB /* icon@2x.png */,
 				03AEA7491A86EA850014DAFB /* icon@3x.png */,
 				03AEA7461A86EA3E0014DAFB /* logo.png */,
@@ -328,6 +331,7 @@
 				61A6DB461A85B40800624BB4 /* Main.storyboard in Resources */,
 				03AEA74B1A86EA850014DAFB /* icon@3x.png in Resources */,
 				03AEA7471A86EA3E0014DAFB /* logo.png in Resources */,
+				6106B5121A8824F500C8E044 /* Camera_icon.png in Resources */,
 				61C955E41A86DC6C00BBC75C /* Please write me a song.ttf in Resources */,
 				61A6DB4B1A85B40800624BB4 /* LaunchScreen.xib in Resources */,
 				61A6DB481A85B40800624BB4 /* Images.xcassets in Resources */,

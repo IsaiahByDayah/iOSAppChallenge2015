@@ -8,14 +8,18 @@
 
 import UIKit
 
-class HomeTabViewController: UIViewController, UIScrollViewDelegate {
+class HomeTabViewController: UIViewController, UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    var circle: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        circle = UIImageView()
+        circle.contentMode = UIViewContentMode.ScaleAspectFit
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -49,31 +53,50 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate {
         bannerView.backgroundColor = UIColor.blueColor()
         scrollView.addSubview(bannerView)
     
-        var circle = UIImageView(frame: CGRect(x: 130, y: 70, width: 120, height: 120))
-        circle.layer.cornerRadius = CGFloat(circle.frame.size.width / 2.0)
+        circle.frame = CGRect(x: scrollViewWidth / 2.0 - 60.0, y: 70, width: 120, height: 120)
+        circle.layer.cornerRadius = CGFloat(circle!.frame.size.width / 2.0)
         circle.clipsToBounds = true
-        circle.backgroundColor = UIColor.redColor()
-        scrollView.addSubview(circle)
+        circle.backgroundColor = UIColor.lightGrayColor()
+        circle.image = TheUsersManager.currentUser!.profilePic
+        scrollView.addSubview(circle!)
+        
+        let imageViewTappedGesture = UITapGestureRecognizer(target: self, action: "imageViewTapped:")
+        circle!.userInteractionEnabled = true
+        circle!.addGestureRecognizer(imageViewTappedGesture)
         
         let section1 = UILabel(frame: CGRect(x: 15, y: 190, width: scrollViewWidth, height: 15))
         section1.text = "MyShows"
         scrollView.addSubview(section1)
         
-        let show1 = UIView(frame: CGRect(x: 15, y: 215, width: scrollViewWidth/3.5, height:scrollViewWidth/3.5))
+        // Shows
+        
+        let showsScrollView = HorizontalScrollView(frame: CGRect(x: SideBuffer / 2.0, y: section1.frame.maxY + ShortVerticleBuffer, width: scrollViewWidth - SideBuffer
+            , height: scrollViewWidth /
+            3.5))
+        showsScrollView.clipsToBounds = false
+        //        trendingShowsVerticleScrollView.backgroundColor = UIColor.blueColor()
+        showsScrollView.contentSize.width = scrollViewWidth * 3.0
+        scrollView.addSubview(showsScrollView)
+        // Build Verticle Scroll View
+        
+        let show1 = UIView(frame: CGRect(x: (SideBuffer * 0) + (scrollViewWidth / 3.5 * 0), y: 0, width: scrollViewWidth/3.5, height:scrollViewWidth/3.5))
         show1.backgroundColor = UIColor.redColor()
-        scrollView.addSubview(show1)
+        showsScrollView.addSubview(show1)
         
-        let show2 = UIView(frame: CGRect(x: 135, y: 215, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
+        let show2 = UIView(frame: CGRect(x: (SideBuffer * 1) + (scrollViewWidth / 3.5 * 1), y: 0, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
         show2.backgroundColor = UIColor.redColor()
-        scrollView.addSubview(show2)
+        showsScrollView.addSubview(show2)
         
-        let show3 = UIView(frame: CGRect(x: 255, y: 215, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
+        let show3 = UIView(frame: CGRect(x: (SideBuffer * 2) + (scrollViewWidth / 3.5 * 2), y: 0, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
         show3.backgroundColor = UIColor.redColor()
-        scrollView.addSubview(show3)
+        showsScrollView.addSubview(show3)
         
-        let show4 = UIView(frame: CGRect(x: 375, y: 215, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
+        let show4 = UIView(frame: CGRect(x: (SideBuffer * 3) + (scrollViewWidth / 3.5 * 3), y: 0, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
         show4.backgroundColor = UIColor.redColor()
-        scrollView.addSubview(show4)
+        showsScrollView.addSubview(show4)
+
+        showsScrollView.compactContentSize()
+        // End Build
         
         let section2 = UILabel(frame: CGRect(x: 15, y: 345, width: scrollViewWidth, height: 20))
         section2.text = "Challenge Trophies"
@@ -158,6 +181,24 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate {
         // Mark: Implement what the page looks like above here
         
         setScrollHeight() // Compacts the page
+    }
+    
+    func imageViewTapped(gesture: UIGestureRecognizer) {
+        let imagePicker = UIImagePickerController()
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+        } else {
+            imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        }
+        imagePicker.delegate = self
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        let photo = info[UIImagePickerControllerOriginalImage] as UIImage
+        circle.image = photo
+        TheUsersManager.currentUser?.profilePic = photo
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

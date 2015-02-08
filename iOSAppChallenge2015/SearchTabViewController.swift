@@ -59,5 +59,11 @@ class SearchTabViewController: UIViewController, UITextFieldDelegate, UITableVie
         }
         return false
     }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        showSearchResults = TheShowsManager.searchShows(textField.text)
+        searchResultsTableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
+        return true
+    }
 
 }

@@ -16,12 +16,12 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    var imageSet: Bool = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        imageView.contentMode = UIViewContentMode.ScaleAspectFit
+        imageView.image = UIImage(named: "Camera_icon.png")
         imageView.layer.cornerRadius = CGFloat(imageView.frame.size.width / 2.0)
         imageView.clipsToBounds = true
         
@@ -49,7 +49,6 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         let photo = info[UIImagePickerControllerOriginalImage] as UIImage
         imageView.image = photo
-        imageSet = true
         dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -69,6 +68,9 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @IBAction func registerUser(sender: AnyObject) {
+        if usernameTextField.text == "" || passwordTextField.text == "" {
+//            return
+        }
         if TheUsersManager.addUser(usernameTextField.text, password: passwordTextField.text, profilePic: imageView.image) {
             println("User Registered")
             if TheUsersManager.loginUser(usernameTextField.text, password: passwordTextField.text) {
