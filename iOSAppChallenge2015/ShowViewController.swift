@@ -28,7 +28,7 @@ class ShowViewController: UIViewController, UIScrollViewDelegate {
         let screenSize = UIScreen.mainScreen().bounds
         
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName : UIFont(name: "pleasewritemeasong", size: 22)!, NSForegroundColorAttributeName : UIColor.whiteColor()]
-        navigationController?.navigationBar.barTintColor = OrangeColor
+        navigationController?.navigationBar.barTintColor = NavColor
         navigationController?.navigationBar.translucent = false
         
         scrollView.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: view.frame.size.height)

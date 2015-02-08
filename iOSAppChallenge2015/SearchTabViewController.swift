@@ -20,7 +20,7 @@ class SearchTabViewController: UIViewController, UITextFieldDelegate, UITableVie
         // Do any additional setup after loading the view.
         
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName : UIFont(name: "pleasewritemeasong", size: 22)!, NSForegroundColorAttributeName : UIColor.whiteColor()]
-        navigationController?.navigationBar.barTintColor = OrangeColor
+        navigationController?.navigationBar.barTintColor = NavColor
         navigationController?.navigationBar.translucent = false
         
         showSearchResults = []
