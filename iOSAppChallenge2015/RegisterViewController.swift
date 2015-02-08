@@ -8,9 +8,13 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class RegisterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
     
     var imageSet: Bool = false
     
@@ -51,5 +55,29 @@ class RegisterViewController: UIViewController, UIImagePickerControllerDelegate,
     
     @IBAction func backToLogInScreen(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField.restorationIdentifier == "usernameTextField" {
+            textField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
+        } else if textField.restorationIdentifier == "passwordTextField" {
+            textField.resignFirstResponder()
+            registerUser(textField)
+        }
+        return false
+    }
+    
+    @IBAction func registerUser(sender: AnyObject) {
+        if TheUsersManager.addUser(usernameTextField.text, password: passwordTextField.text, profilePic: imageView.image) {
+            println("User Registered")
+            if TheUsersManager.loginUser(usernameTextField.text, password: passwordTextField.text) {
+                println("User Logged In")
+                performSegueWithIdentifier("registerComplete", sender: self)
+            }
+        } else {
+            usernameTextField.text = ""
+            passwordTextField.text = ""
+        }
     }
 }

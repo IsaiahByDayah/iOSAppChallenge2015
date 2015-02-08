@@ -15,10 +15,13 @@ class UsersManager {
     
     var currentUser: User? = nil
     
-    func addUser(username: String, password: String, profilePic: UIImage) -> User {
-        let user = User(username: username, password: password, profilePic: profilePic)
-        users.append(user)
-        return user
+    func addUser(username: String, password: String, profilePic: UIImage?) -> Bool {
+        if getUser(username) == nil {
+            let user = User(username: username, password: password, profilePic: profilePic?)
+            users.append(user)
+            return true
+        }
+        return false
     }
     
     func getUser(id: Int) -> User? {

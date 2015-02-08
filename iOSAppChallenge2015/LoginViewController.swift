@@ -34,8 +34,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func login(sender: AnyObject) {
         if TheUsersManager.loginUser(usernameTextField.text, password: passwordTextField.text) {
             println("User logged in")
-            let tabbedViewController = MainTabViewController()
-            presentViewController(tabbedViewController, animated: true, completion: nil)
+        performSegueWithIdentifier("loginComplete", sender: self)
         } else {
             usernameTextField.text = ""
             passwordTextField.text = ""
