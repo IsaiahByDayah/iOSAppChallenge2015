@@ -10,6 +10,39 @@
 		03AEA7471A86EA3E0014DAFB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7461A86EA3E0014DAFB /* logo.png */; };
 		03AEA74A1A86EA850014DAFB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7481A86EA850014DAFB /* icon@2x.png */; };
 		03AEA74B1A86EA850014DAFB /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7491A86EA850014DAFB /* icon@3x.png */; };
+		03D6EDB01A88145400F213D9 /* BsBurger.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED8A1A88145400F213D9 /* BsBurger.png */; };
+		03D6EDB11A88145400F213D9 /* BBep1_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED8C1A88145400F213D9 /* BBep1_4.jpg */; };
+		03D6EDB21A88145400F213D9 /* BBep3_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED8D1A88145400F213D9 /* BBep3_5.png */; };
+		03D6EDB31A88145400F213D9 /* BBep4_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED8E1A88145400F213D9 /* BBep4_3.jpg */; };
+		03D6EDB41A88145400F213D9 /* BreakingBob.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED901A88145400F213D9 /* BreakingBob.jpg */; };
+		03D6EDB51A88145400F213D9 /* Butts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED911A88145400F213D9 /* Butts.jpg */; };
+		03D6EDB61A88145400F213D9 /* Haters.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED921A88145400F213D9 /* Haters.gif */; };
+		03D6EDB71A88145400F213D9 /* BBurger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED941A88145400F213D9 /* BBurger.jpg */; };
+		03D6EDB91A88145400F213D9 /* GTBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED981A88145400F213D9 /* GTBanner.jpg */; };
+		03D6EDBA1A88145400F213D9 /* GTep1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED9A1A88145400F213D9 /* GTep1_1.png */; };
+		03D6EDBB1A88145400F213D9 /* GTep3_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED9B1A88145400F213D9 /* GTep3_9.jpg */; };
+		03D6EDBC1A88145400F213D9 /* GTep4_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED9C1A88145400F213D9 /* GTep4_3.jpg */; };
+		03D6EDBD1A88145400F213D9 /* Drogon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED9E1A88145400F213D9 /* Drogon.jpg */; };
+		03D6EDBE1A88145400F213D9 /* Impin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED9F1A88145400F213D9 /* Impin.jpg */; };
+		03D6EDBF1A88145400F213D9 /* LiveDangerous.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA01A88145400F213D9 /* LiveDangerous.jpg */; };
+		03D6EDC01A88145400F213D9 /* Game-Of-Thrones-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA21A88145400F213D9 /* Game-Of-Thrones-1.jpeg */; };
+		03D6EDC11A88145400F213D9 /* himym-banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA51A88145400F213D9 /* himym-banner.jpg */; };
+		03D6EDC21A88145400F213D9 /* himymep2_20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA71A88145400F213D9 /* himymep2_20.jpg */; };
+		03D6EDC31A88145400F213D9 /* himymep8_17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA81A88145400F213D9 /* himymep8_17.jpg */; };
+		03D6EDC41A88145400F213D9 /* himymep8_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA91A88145400F213D9 /* himymep8_7.jpg */; };
+		03D6EDC51A88145400F213D9 /* himym2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDAB1A88145400F213D9 /* himym2.jpg */; };
+		03D6EDC61A88145400F213D9 /* himym3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDAC1A88145400F213D9 /* himym3.jpg */; };
+		03D6EDC71A88145400F213D9 /* himym4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDAD1A88145400F213D9 /* himym4.jpg */; };
+		03D6EDC81A88145400F213D9 /* himym.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDAF1A88145400F213D9 /* himym.jpg */; };
+		03D6EDCE1A88204C00F213D9 /* BBMerch2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDCB1A88204C00F213D9 /* BBMerch2.jpg */; };
+		03D6EDCF1A88204C00F213D9 /* BBMerch3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDCC1A88204C00F213D9 /* BBMerch3.jpg */; };
+		03D6EDD41A88206500F213D9 /* GTMerch1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDD11A88206500F213D9 /* GTMerch1.jpg */; };
+		03D6EDD51A88206500F213D9 /* GTMerch2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDD21A88206500F213D9 /* GTMerch2.jpg */; };
+		03D6EDD61A88206500F213D9 /* GTMerch3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDD31A88206500F213D9 /* GTMerch3.jpg */; };
+		03D6EDDB1A88208700F213D9 /* HMerch1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDD81A88208700F213D9 /* HMerch1.jpg */; };
+		03D6EDDC1A88208700F213D9 /* HMerch2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDD91A88208700F213D9 /* HMerch2.jpg */; };
+		03D6EDDD1A88208700F213D9 /* HMerch3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDDA1A88208700F213D9 /* HMerch3.jpg */; };
+		03D6EDDF1A8821CE00F213D9 /* BBMerch1.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDDE1A8821CE00F213D9 /* BBMerch1.png */; };
 		6103E8021A87596A00D663B4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6103E8011A87596A00D663B4 /* RegisterViewController.swift */; };
 		6106B5121A8824F500C8E044 /* Camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6106B5111A8824F500C8E044 /* Camera_icon.png */; };
 		613326001A86C70E00F292E0 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */; };
@@ -58,6 +91,39 @@
 		03AEA7461A86EA3E0014DAFB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		03AEA7481A86EA850014DAFB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		03AEA7491A86EA850014DAFB /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
+		03D6ED8A1A88145400F213D9 /* BsBurger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BsBurger.png; sourceTree = "<group>"; };
+		03D6ED8C1A88145400F213D9 /* BBep1_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BBep1_4.jpg; sourceTree = "<group>"; };
+		03D6ED8D1A88145400F213D9 /* BBep3_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBep3_5.png; sourceTree = "<group>"; };
+		03D6ED8E1A88145400F213D9 /* BBep4_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BBep4_3.jpg; sourceTree = "<group>"; };
+		03D6ED901A88145400F213D9 /* BreakingBob.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BreakingBob.jpg; sourceTree = "<group>"; };
+		03D6ED911A88145400F213D9 /* Butts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Butts.jpg; sourceTree = "<group>"; };
+		03D6ED921A88145400F213D9 /* Haters.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Haters.gif; sourceTree = "<group>"; };
+		03D6ED941A88145400F213D9 /* BBurger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BBurger.jpg; sourceTree = "<group>"; };
+		03D6ED981A88145400F213D9 /* GTBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GTBanner.jpg; sourceTree = "<group>"; };
+		03D6ED9A1A88145400F213D9 /* GTep1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GTep1_1.png; sourceTree = "<group>"; };
+		03D6ED9B1A88145400F213D9 /* GTep3_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GTep3_9.jpg; sourceTree = "<group>"; };
+		03D6ED9C1A88145400F213D9 /* GTep4_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GTep4_3.jpg; sourceTree = "<group>"; };
+		03D6ED9E1A88145400F213D9 /* Drogon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Drogon.jpg; sourceTree = "<group>"; };
+		03D6ED9F1A88145400F213D9 /* Impin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Impin.jpg; sourceTree = "<group>"; };
+		03D6EDA01A88145400F213D9 /* LiveDangerous.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LiveDangerous.jpg; sourceTree = "<group>"; };
+		03D6EDA21A88145400F213D9 /* Game-Of-Thrones-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Game-Of-Thrones-1.jpeg"; sourceTree = "<group>"; };
+		03D6EDA51A88145400F213D9 /* himym-banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "himym-banner.jpg"; sourceTree = "<group>"; };
+		03D6EDA71A88145400F213D9 /* himymep2_20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himymep2_20.jpg; sourceTree = "<group>"; };
+		03D6EDA81A88145400F213D9 /* himymep8_17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himymep8_17.jpg; sourceTree = "<group>"; };
+		03D6EDA91A88145400F213D9 /* himymep8_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himymep8_7.jpg; sourceTree = "<group>"; };
+		03D6EDAB1A88145400F213D9 /* himym2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himym2.jpg; sourceTree = "<group>"; };
+		03D6EDAC1A88145400F213D9 /* himym3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himym3.jpg; sourceTree = "<group>"; };
+		03D6EDAD1A88145400F213D9 /* himym4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himym4.jpg; sourceTree = "<group>"; };
+		03D6EDAF1A88145400F213D9 /* himym.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himym.jpg; sourceTree = "<group>"; };
+		03D6EDCB1A88204C00F213D9 /* BBMerch2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BBMerch2.jpg; sourceTree = "<group>"; };
+		03D6EDCC1A88204C00F213D9 /* BBMerch3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BBMerch3.jpg; sourceTree = "<group>"; };
+		03D6EDD11A88206500F213D9 /* GTMerch1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GTMerch1.jpg; sourceTree = "<group>"; };
+		03D6EDD21A88206500F213D9 /* GTMerch2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GTMerch2.jpg; sourceTree = "<group>"; };
+		03D6EDD31A88206500F213D9 /* GTMerch3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GTMerch3.jpg; sourceTree = "<group>"; };
+		03D6EDD81A88208700F213D9 /* HMerch1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HMerch1.jpg; sourceTree = "<group>"; };
+		03D6EDD91A88208700F213D9 /* HMerch2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HMerch2.jpg; sourceTree = "<group>"; };
+		03D6EDDA1A88208700F213D9 /* HMerch3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HMerch3.jpg; sourceTree = "<group>"; };
+		03D6EDDE1A8821CE00F213D9 /* BBMerch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBMerch1.png; sourceTree = "<group>"; };
 		6103E8011A87596A00D663B4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6106B5111A8824F500C8E044 /* Camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera_icon.png; sourceTree = "<group>"; };
 		613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +189,190 @@
 				03AEA7461A86EA3E0014DAFB /* logo.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		03D6ED871A88143200F213D9 /* Show Media */ = {
+			isa = PBXGroup;
+			children = (
+				03D6ED881A88145400F213D9 /* Bob's Burgers */,
+				03D6ED951A88145400F213D9 /* Game of Thrones */,
+				03D6EDA31A88145400F213D9 /* HIMYM */,
+			);
+			name = "Show Media";
+			sourceTree = "<group>";
+		};
+		03D6ED881A88145400F213D9 /* Bob's Burgers */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDC91A88204C00F213D9 /* Merch */,
+				03D6ED891A88145400F213D9 /* Banner */,
+				03D6ED8B1A88145400F213D9 /* Episode Screenshots */,
+				03D6ED8F1A88145400F213D9 /* Photos and Memes */,
+				03D6ED931A88145400F213D9 /* Thumbnail */,
+			);
+			path = "Bob's Burgers";
+			sourceTree = "<group>";
+		};
+		03D6ED891A88145400F213D9 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				03D6ED8A1A88145400F213D9 /* BsBurger.png */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		03D6ED8B1A88145400F213D9 /* Episode Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				03D6ED8C1A88145400F213D9 /* BBep1_4.jpg */,
+				03D6ED8D1A88145400F213D9 /* BBep3_5.png */,
+				03D6ED8E1A88145400F213D9 /* BBep4_3.jpg */,
+			);
+			path = "Episode Screenshots";
+			sourceTree = "<group>";
+		};
+		03D6ED8F1A88145400F213D9 /* Photos and Memes */ = {
+			isa = PBXGroup;
+			children = (
+				03D6ED901A88145400F213D9 /* BreakingBob.jpg */,
+				03D6ED911A88145400F213D9 /* Butts.jpg */,
+				03D6ED921A88145400F213D9 /* Haters.gif */,
+			);
+			path = "Photos and Memes";
+			sourceTree = "<group>";
+		};
+		03D6ED931A88145400F213D9 /* Thumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				03D6ED941A88145400F213D9 /* BBurger.jpg */,
+			);
+			path = Thumbnail;
+			sourceTree = "<group>";
+		};
+		03D6ED951A88145400F213D9 /* Game of Thrones */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDD01A88206500F213D9 /* Merch */,
+				03D6ED961A88145400F213D9 /* Banner */,
+				03D6ED991A88145400F213D9 /* Episode Screenshots */,
+				03D6ED9D1A88145400F213D9 /* Photos and Memes */,
+				03D6EDA11A88145400F213D9 /* Thumbnail */,
+			);
+			path = "Game of Thrones";
+			sourceTree = "<group>";
+		};
+		03D6ED961A88145400F213D9 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				03D6ED981A88145400F213D9 /* GTBanner.jpg */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		03D6ED991A88145400F213D9 /* Episode Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				03D6ED9A1A88145400F213D9 /* GTep1_1.png */,
+				03D6ED9B1A88145400F213D9 /* GTep3_9.jpg */,
+				03D6ED9C1A88145400F213D9 /* GTep4_3.jpg */,
+			);
+			path = "Episode Screenshots";
+			sourceTree = "<group>";
+		};
+		03D6ED9D1A88145400F213D9 /* Photos and Memes */ = {
+			isa = PBXGroup;
+			children = (
+				03D6ED9E1A88145400F213D9 /* Drogon.jpg */,
+				03D6ED9F1A88145400F213D9 /* Impin.jpg */,
+				03D6EDA01A88145400F213D9 /* LiveDangerous.jpg */,
+			);
+			path = "Photos and Memes";
+			sourceTree = "<group>";
+		};
+		03D6EDA11A88145400F213D9 /* Thumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDA21A88145400F213D9 /* Game-Of-Thrones-1.jpeg */,
+			);
+			path = Thumbnail;
+			sourceTree = "<group>";
+		};
+		03D6EDA31A88145400F213D9 /* HIMYM */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDD71A88208700F213D9 /* Merch */,
+				03D6EDA41A88145400F213D9 /* Banner */,
+				03D6EDA61A88145400F213D9 /* Episode Screenshots */,
+				03D6EDAA1A88145400F213D9 /* Photos and Memes */,
+				03D6EDAE1A88145400F213D9 /* Thumbnail */,
+			);
+			path = HIMYM;
+			sourceTree = "<group>";
+		};
+		03D6EDA41A88145400F213D9 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDA51A88145400F213D9 /* himym-banner.jpg */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		03D6EDA61A88145400F213D9 /* Episode Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDA71A88145400F213D9 /* himymep2_20.jpg */,
+				03D6EDA81A88145400F213D9 /* himymep8_17.jpg */,
+				03D6EDA91A88145400F213D9 /* himymep8_7.jpg */,
+			);
+			path = "Episode Screenshots";
+			sourceTree = "<group>";
+		};
+		03D6EDAA1A88145400F213D9 /* Photos and Memes */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDAB1A88145400F213D9 /* himym2.jpg */,
+				03D6EDAC1A88145400F213D9 /* himym3.jpg */,
+				03D6EDAD1A88145400F213D9 /* himym4.jpg */,
+			);
+			path = "Photos and Memes";
+			sourceTree = "<group>";
+		};
+		03D6EDAE1A88145400F213D9 /* Thumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDAF1A88145400F213D9 /* himym.jpg */,
+			);
+			path = Thumbnail;
+			sourceTree = "<group>";
+		};
+		03D6EDC91A88204C00F213D9 /* Merch */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDDE1A8821CE00F213D9 /* BBMerch1.png */,
+				03D6EDCB1A88204C00F213D9 /* BBMerch2.jpg */,
+				03D6EDCC1A88204C00F213D9 /* BBMerch3.jpg */,
+			);
+			path = Merch;
+			sourceTree = "<group>";
+		};
+		03D6EDD01A88206500F213D9 /* Merch */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDD11A88206500F213D9 /* GTMerch1.jpg */,
+				03D6EDD21A88206500F213D9 /* GTMerch2.jpg */,
+				03D6EDD31A88206500F213D9 /* GTMerch3.jpg */,
+			);
+			path = Merch;
+			sourceTree = "<group>";
+		};
+		03D6EDD71A88208700F213D9 /* Merch */ = {
+			isa = PBXGroup;
+			children = (
+				03D6EDD81A88208700F213D9 /* HMerch1.jpg */,
+				03D6EDD91A88208700F213D9 /* HMerch2.jpg */,
+				03D6EDDA1A88208700F213D9 /* HMerch3.jpg */,
+			);
+			path = Merch;
 			sourceTree = "<group>";
 		};
 		61A2B6FC1A85CF2E00850234 /* Models */ = {
@@ -233,6 +483,7 @@
 		61C955E21A86DBEC00BBC75C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				03D6ED871A88143200F213D9 /* Show Media */,
 				03AEA7451A86EA150014DAFB /* Images */,
 				61C955E51A86DC7100BBC75C /* Fonts */,
 			);
@@ -328,12 +579,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D6EDD41A88206500F213D9 /* GTMerch1.jpg in Resources */,
+				03D6EDC71A88145400F213D9 /* himym4.jpg in Resources */,
+				03D6EDC41A88145400F213D9 /* himymep8_7.jpg in Resources */,
+				03D6EDBC1A88145400F213D9 /* GTep4_3.jpg in Resources */,
+				03D6EDB41A88145400F213D9 /* BreakingBob.jpg in Resources */,
+				03D6EDBF1A88145400F213D9 /* LiveDangerous.jpg in Resources */,
+				03D6EDB21A88145400F213D9 /* BBep3_5.png in Resources */,
+				03D6EDC01A88145400F213D9 /* Game-Of-Thrones-1.jpeg in Resources */,
+				03D6EDC61A88145400F213D9 /* himym3.jpg in Resources */,
 				61A6DB461A85B40800624BB4 /* Main.storyboard in Resources */,
 				03AEA74B1A86EA850014DAFB /* icon@3x.png in Resources */,
+				03D6EDB51A88145400F213D9 /* Butts.jpg in Resources */,
+				03D6EDB61A88145400F213D9 /* Haters.gif in Resources */,
+				03D6EDCE1A88204C00F213D9 /* BBMerch2.jpg in Resources */,
+				03D6EDBE1A88145400F213D9 /* Impin.jpg in Resources */,
 				03AEA7471A86EA3E0014DAFB /* logo.png in Resources */,
-				6106B5121A8824F500C8E044 /* Camera_icon.png in Resources */,
+				03D6EDB31A88145400F213D9 /* BBep4_3.jpg in Resources */,
+				03D6EDC21A88145400F213D9 /* himymep2_20.jpg in Resources */,
+				03D6EDBB1A88145400F213D9 /* GTep3_9.jpg in Resources */,
+				03D6EDB01A88145400F213D9 /* BsBurger.png in Resources */,
+				03D6EDDD1A88208700F213D9 /* HMerch3.jpg in Resources */,
+				03D6EDB71A88145400F213D9 /* BBurger.jpg in Resources */,
+				03D6EDBD1A88145400F213D9 /* Drogon.jpg in Resources */,
+				03D6EDC51A88145400F213D9 /* himym2.jpg in Resources */,
 				61C955E41A86DC6C00BBC75C /* Please write me a song.ttf in Resources */,
+				03D6EDCF1A88204C00F213D9 /* BBMerch3.jpg in Resources */,
+				03D6EDD61A88206500F213D9 /* GTMerch3.jpg in Resources */,
+				03D6EDDF1A8821CE00F213D9 /* BBMerch1.png in Resources */,
+				03D6EDDB1A88208700F213D9 /* HMerch1.jpg in Resources */,
 				61A6DB4B1A85B40800624BB4 /* LaunchScreen.xib in Resources */,
+				03D6EDBA1A88145400F213D9 /* GTep1_1.png in Resources */,
+				03D6EDD51A88206500F213D9 /* GTMerch2.jpg in Resources */,
+				03D6EDC31A88145400F213D9 /* himymep8_17.jpg in Resources */,
+				03D6EDB91A88145400F213D9 /* GTBanner.jpg in Resources */,
+				03D6EDC11A88145400F213D9 /* himym-banner.jpg in Resources */,
+				03D6EDDC1A88208700F213D9 /* HMerch2.jpg in Resources */,
+				03D6EDC81A88145400F213D9 /* himym.jpg in Resources */,
+				03D6EDB11A88145400F213D9 /* BBep1_4.jpg in Resources */,
 				61A6DB481A85B40800624BB4 /* Images.xcassets in Resources */,
 				03AEA74A1A86EA850014DAFB /* icon@2x.png in Resources */,
 			);
