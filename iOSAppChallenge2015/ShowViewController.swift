@@ -1,23 +1,25 @@
 //
-//  HomeTabViewController.swift
+//  ShowViewController.swift
 //  iOSAppChallenge2015
 //
-//  Created by Isaiah Smith on 2/7/15.
+//  Created by Isaiah Smith on 2/8/15.
 //  Copyright (c) 2015 Isaiah Smith. All rights reserved.
 //
 
 import UIKit
 
-class HomeTabViewController: UIViewController, UIScrollViewDelegate {
-
+class ShowViewController: UIViewController, UIScrollViewDelegate {
+    
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var show: Show?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
     override func viewDidAppear(animated: Bool) {
         
         let statusHeight = UIApplication.sharedApplication().statusBarFrame.size.height
@@ -40,7 +42,7 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate {
         
         // Mark: Implement what the page looks like below here
         
-        /* Examples for adding elements
+        /* Examples for adding elements */
         
         let redView = UIView(frame: CGRect(x: 0, y: 100, width: scrollView.contentSize.width / 2.0, height: 200))
         redView.backgroundColor = UIColor.redColor()
@@ -70,8 +72,8 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate {
         let greyView = UIView(frame: CGRect(x: 0, y: browView.bounds.size.height - 100, width: browView.bounds.width / 2.0, height: 100))
         greyView.backgroundColor = UIColor.grayColor()
         browView.addSubview(greyView)
-
-        */
+        
+        /**/
         
         
         
@@ -79,7 +81,7 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate {
         
         setScrollHeight() // Compacts the page
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

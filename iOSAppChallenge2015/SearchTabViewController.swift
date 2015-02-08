@@ -8,12 +8,22 @@
 
 import UIKit
 
-class SearchTabViewController: UIViewController {
+class SearchTabViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate {
+    
+    var showSearchResults: [Show]!
 
+    @IBOutlet weak var searchResultsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName : UIFont(name: "pleasewritemeasong", size: 22)!, NSForegroundColorAttributeName : UIColor.whiteColor()]
+        navigationController?.navigationBar.barTintColor = OrangeColor
+        navigationController?.navigationBar.translucent = false
+        
+        showSearchResults = []
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +31,33 @@ class SearchTabViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("TVShowCell", forIndexPath: indexPath) as UITableViewCell
+        
+        let show = showSearchResults[indexPath.row]
+        
+        cell.textLabel?.text = show.name
+        cell.imageView?.image = show.thumbnail
+        
+        return cell
     }
-    */
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return showSearchResults.count
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField.restorationIdentifier == "searchTextField" {
+            println("Hit Search")
+            textField.resignFirstResponder()
+            showSearchResults = TheShowsManager.searchShows(textField.text)
+            searchResultsTableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+        return false
+    }
 
 }
