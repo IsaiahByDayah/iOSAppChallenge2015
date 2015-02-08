@@ -17,18 +17,33 @@ class Show {
     
     let id = SubStruct.id++
     
-    var name: String
-    var description: String
+    let name: String
+    let description: String
+    let keywords: [String]
     var episodes: [Episode]
-    var thumbnail: UIImage
+    let thumbnail: UIImage
     var status: Int
     
-    init(name: String, description: String, episodes: [Episode], thumbnail: UIImage, status: Int){
+    init(name: String, description: String, episodes: [Episode], thumbnail: UIImage, status: Int, keywords: [String]){
         self.name = name
         self.description = description
         self.episodes = episodes
         self.thumbnail = thumbnail
         self.status = status
+        self.keywords = []
+        for keyword in keywords {
+            self.keywords.append(keyword.lowercaseString)
+        }
+    }
+    
+    func containsKeyword(keyword: String) -> Bool {
+        let q = keyword.lowercaseString
+        for keyword in keywords {
+            if keyword == q {
+                return true
+            }
+        }
+        return false
     }
     
     //fix later

@@ -12,8 +12,8 @@ import UIKit
 class ShowsManager {
     var shows: [Show] = []
 
-    func addShow(name: String, withDescription: String, withImage: UIImage, withStatus: Int) ->Show {
-        let newShow = Show(name: name, description: withDescription, episodes: [], thumbnail: withImage, status: withStatus)
+    func addShow(name: String, withDescription: String, withImage: UIImage, withStatus: Int, withKeywords: [String]) ->Show {
+        let newShow = Show(name: name, description: withDescription, episodes: [], thumbnail: withImage, status: withStatus, keywords: withKeywords)
         shows.append(newShow)
         return newShow
     }
@@ -33,7 +33,14 @@ class ShowsManager {
     }
     
     func searchShows(myQuery: String) -> [Show]{
-        //TODO
-        return []
+        var showResults: [Show] = []
+        
+        for show in shows {
+            if (show.name.lowercaseString.hasPrefix(myQuery.lowercaseString)) || show.containsKeyword(myQuery) {
+                showResults.append(show)
+            }
+        }
+        
+        return showResults
     }
 }

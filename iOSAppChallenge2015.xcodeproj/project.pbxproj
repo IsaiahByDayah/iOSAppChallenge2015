@@ -36,6 +36,8 @@
 		61A6DB481A85B40800624BB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A6DB471A85B40800624BB4 /* Images.xcassets */; };
 		61A6DB4B1A85B40800624BB4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A6DB491A85B40800624BB4 /* LaunchScreen.xib */; };
 		61A6DB571A85B40800624BB4 /* iOSAppChallenge2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A6DB561A85B40800624BB4 /* iOSAppChallenge2015Tests.swift */; };
+		61ABE6991A87DAE40006E401 /* VerticleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ABE6981A87DAE40006E401 /* VerticleScrollView.swift */; };
+		61ABE69C1A87DC470006E401 /* ClickableShowTileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ABE69B1A87DC470006E401 /* ClickableShowTileImageView.swift */; };
 		61C955E41A86DC6C00BBC75C /* Please write me a song.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C955E31A86DBF900BBC75C /* Please write me a song.ttf */; };
 		61F8CF111A86FC9C00B41A4D /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8CF101A86FC9C00B41A4D /* MainTabViewController.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +86,8 @@
 		61A6DB501A85B40800624BB4 /* iOSAppChallenge2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAppChallenge2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A6DB551A85B40800624BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61A6DB561A85B40800624BB4 /* iOSAppChallenge2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppChallenge2015Tests.swift; sourceTree = "<group>"; };
+		61ABE6981A87DAE40006E401 /* VerticleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticleScrollView.swift; sourceTree = "<group>"; };
+		61ABE69B1A87DC470006E401 /* ClickableShowTileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickableShowTileImageView.swift; sourceTree = "<group>"; };
 		61C955E31A86DBF900BBC75C /* Please write me a song.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Please write me a song.ttf"; sourceTree = "<group>"; };
 		61F8CF101A86FC9C00B41A4D /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +168,7 @@
 				61A2B6FF1A85EAB600850234 /* Constants.swift */,
 				617B6A5E1A86E5D8003D5718 /* LoginViewController.swift */,
 				6103E8011A87596A00D663B4 /* RegisterViewController.swift */,
+				61ABE69A1A87DAF10006E401 /* Custom UI Components */,
 				61A2B6FC1A85CF2E00850234 /* Models */,
 				61C955E21A86DBEC00BBC75C /* Resources */,
 				61C955E11A86C9DE00BBC75C /* Tab Controllers */,
@@ -197,6 +202,15 @@
 				61A6DB551A85B40800624BB4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61ABE69A1A87DAF10006E401 /* Custom UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				61ABE6981A87DAE40006E401 /* VerticleScrollView.swift */,
+				61ABE69B1A87DC470006E401 /* ClickableShowTileImageView.swift */,
+			);
+			name = "Custom UI Components";
 			sourceTree = "<group>";
 		};
 		61C955E11A86C9DE00BBC75C /* Tab Controllers */ = {
@@ -333,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				617B6A5F1A86E5D8003D5718 /* LoginViewController.swift in Sources */,
+				61ABE69C1A87DC470006E401 /* ClickableShowTileImageView.swift in Sources */,
 				613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */,
 				61A2B6FB1A85CF0F00850234 /* PhotosManager.swift in Sources */,
 				61A2B6E31A85CDF600850234 /* UsersManager.swift in Sources */,
@@ -343,6 +358,7 @@
 				61A2B6ED1A85CE7000850234 /* Challenge.swift in Sources */,
 				61A2B6E71A85CE3500850234 /* ShowsManager.swift in Sources */,
 				61A2B6EB1A85CE5B00850234 /* EpisodesManager.swift in Sources */,
+				61ABE6991A87DAE40006E401 /* VerticleScrollView.swift in Sources */,
 				613326021A86C71900F292E0 /* SearchTabViewController.swift in Sources */,
 				61A2B6EF1A85CE8200850234 /* ChallengesManager.swift in Sources */,
 				61A2B6F91A85CF0100850234 /* Photo.swift in Sources */,
