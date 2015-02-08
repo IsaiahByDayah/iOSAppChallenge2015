@@ -42,8 +42,4 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func register(sender: AnyObject) {
-        performSegueWithIdentifier("loginComplete", sender: self)
-    }
-    
 }
