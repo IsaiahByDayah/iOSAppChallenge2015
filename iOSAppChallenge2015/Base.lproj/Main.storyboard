@@ -447,7 +447,7 @@
         <scene sceneID="EBQ-Cu-vtm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S6w-6m-JPU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="aXV-LG-XVQ">
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeTabIcon" id="aXV-LG-XVQ">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -489,7 +489,7 @@
         <scene sceneID="ksg-oG-bQy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pbr-XX-WU6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feed" id="ffP-MR-VSA">
+                    <tabBarItem key="tabBarItem" title="Feed" image="FeedTabIcon" id="ffP-MR-VSA">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -526,6 +526,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FeedTabIcon" width="25" height="25"/>
+        <image name="HomeTabIcon" width="25" height="25"/>
         <image name="logo.png" width="1080" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
