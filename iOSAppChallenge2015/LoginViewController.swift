@@ -18,6 +18,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        playVTGame("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/q1xj1dF08vQ\" frameborder=\"0\" allowfullscreen></iframe>")
+    }
+    
+    func playVTGame(link: String){
+        var webViewBG = UIWebView(frame: CGRect(x: 0, y: 0, width: 300, height: 200))
+        webViewBG.loadHTMLString(link, baseURL: nil)
+        webViewBG.userInteractionEnabled = true
+        self.view.addSubview(webViewBG)
+        
+        
+        
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
