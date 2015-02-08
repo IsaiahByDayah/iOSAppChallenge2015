@@ -12,6 +12,8 @@ class FeedTabViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var selectedShow: Show?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -34,7 +36,6 @@ class FeedTabViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = containerSize
         
         let scrollViewWidth = scrollView.contentSize.width
-        
         
         // Mark: Implement what the page looks like below here
         
@@ -71,11 +72,89 @@ class FeedTabViewController: UIViewController, UIScrollViewDelegate {
         
         */
         
+        let redView = UIView(frame: CGRect(x: 0, y: 0, width: scrollView.contentSize.width, height: scrollViewWidth * 0.5))
+        redView.backgroundColor = UIColor.redColor()
+        scrollView.addSubview(redView)
+        
+        // Trending Shows
+        
+        let trendingShowsLabel = UILabel(frame: CGRect(x: SideBuffer, y: redView.frame.maxY + SectionVerticleBuffer, width: scrollViewWidth, height: 20))
+        trendingShowsLabel.text = "Trending Shows"
+        scrollView.addSubview(trendingShowsLabel)
+        
+        let trendingShowsVerticleScrollView = HorizontalScrollView(frame: CGRect(x: 0, y: trendingShowsLabel.frame.maxY + ShortVerticleBuffer, width: scrollViewWidth, height: scrollViewWidth /
+            3.5))
+        trendingShowsVerticleScrollView.backgroundColor = UIColor.blueColor()
+        trendingShowsVerticleScrollView.contentSize.width = scrollViewWidth * 2.0
+        scrollView.addSubview(trendingShowsVerticleScrollView)
+        // Build Verticle Scroll View
+        
+        let trendingShows = TheShowsManager.getTrendingShows()
+        var lastShow: [ClickableShowTileImageView]?
+        var indexOfLastShow:CGFloat = 0.0
+        for show in trendingShows {
+            let showTile = ClickableShowTileImageView(image: show.thumbnail, andShow: show)
+            
+            let imageViewTappedGesture = UITapGestureRecognizer(target: self, action: "showTileTapped:")
+            showTile.userInteractionEnabled = true
+            showTile.addGestureRecognizer(imageViewTappedGesture)
+            
+            showTile.frame = CGRect(
+                origin: CGPoint(x: (SideBuffer * indexOfLastShow) + (scrollViewWidth / 3.5 * indexOfLastShow), y: 0),
+                size: CGSize(width: scrollViewWidth / 3.5, height: scrollViewWidth / 3.5)
+            )
+            showTile.backgroundColor = UIColor.yellowColor()
+            trendingShowsVerticleScrollView.addSubview(showTile)
+            indexOfLastShow += 1.0
+        }
+        
+        trendingShowsVerticleScrollView.compactContentSize()
+        // End Build
+        
+        // Trending Challenges
+        
+//        let trendingShowsLabel = UILabel(frame: CGRect(x: SideBuffer, y: redView.frame.maxY + SectionVerticleBuffer, width: scrollViewWidth, height: 20))
+//        trendingShowsLabel.text = "Trending Shows"
+//        scrollView.addSubview(trendingShowsLabel)
+//        
+//        let trendingShowsVerticleScrollView = HorizontalScrollView(frame: CGRect(x: 0, y: trendingShowsLabel.frame.maxY + ShortVerticleBuffer, width: scrollViewWidth, height: scrollViewWidth /
+//            3.5))
+//        trendingShowsVerticleScrollView.backgroundColor = UIColor.blueColor()
+//        trendingShowsVerticleScrollView.contentSize.width = scrollViewWidth * 2.0
+//        scrollView.addSubview(trendingShowsVerticleScrollView)
+//        // Build Verticle Scroll View
+//        
+//        let trendingShows = TheShowsManager.getTrendingShows()
+//        var lastShow: [ClickableShowTileImageView]?
+//        var indexOfLastShow:CGFloat = 0.0
+//        for show in trendingShows {
+//            let showTile = ClickableShowTileImageView(image: show.thumbnail, andShow: show)
+//            
+//            showTile.frame = CGRect(
+//                origin: CGPoint(x: (SideBuffer * indexOfLastShow) + (scrollViewWidth / 3.5 * indexOfLastShow), y: 0),
+//                size: CGSize(width: scrollViewWidth / 3.5, height: scrollViewWidth / 3.5)
+//            )
+//            showTile.backgroundColor = UIColor.yellowColor()
+//            trendingShowsVerticleScrollView.addSubview(showTile)
+//            indexOfLastShow += 1.0
+//        }
+//        
+//        trendingShowsVerticleScrollView.compactContentSize()
+//        // End Build
         
         
         // Mark: Implement what the page looks like above here
         
         setScrollHeight() // Compacts the page
+    }
+    
+    func showTileTapped(gesture: UIGestureRecognizer) {
+        let view = gesture.view as ClickableShowTileImageView
+        let show = view.show
+        
+        selectedShow = show
+    performSegueWithIdentifier("presentShowViewControllerFromFeed", sender: self)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -93,5 +172,17 @@ class FeedTabViewController: UIViewController, UIScrollViewDelegate {
         }
         
         scrollView.contentSize.height = scrollHeight
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "presentShowViewControllerFromFeed" {
+            println("Going to show view controller")
+            let navViewController = segue.destinationViewController as UINavigationController
+            let showViewController = navViewController.viewControllers[0] as ShowViewController
+            
+            println("Got destination")
+            showViewController.show = selectedShow?
+            println("set show for destination")
+        }
     }
 }

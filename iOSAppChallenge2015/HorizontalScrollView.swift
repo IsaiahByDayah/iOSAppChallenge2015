@@ -1,5 +1,5 @@
 //
-//  VerticleScrollView.swift
+//  HorizontalScrollView.swift
 //  iOSAppChallenge2015
 //
 //  Created by Isaiah Smith on 2/8/15.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class VerticleScrollView: UIScrollView {
+class HorizontalScrollView: UIScrollView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         self.contentSize.height = frame.size.height
+        self.showsHorizontalScrollIndicator = false
     }
     
     func compactContentSize() {

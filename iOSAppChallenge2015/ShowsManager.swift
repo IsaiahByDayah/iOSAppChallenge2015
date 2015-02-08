@@ -29,7 +29,8 @@ class ShowsManager {
     
     func getTrendingShows() -> [Show]{
         //TODO
-        return []
+//        return []
+        return shows
     }
     
     func searchShows(myQuery: String) -> [Show]{
@@ -42,5 +43,12 @@ class ShowsManager {
         }
         
         return showResults
+    }
+    
+    init() {
+        addShow("Test Show", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"])
+        addShow("Test Show 2", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"])
+        addShow("Test Show 3", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"])
+        addShow("Test Show 4", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"])
     }
 }

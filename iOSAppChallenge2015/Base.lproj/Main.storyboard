@@ -75,11 +75,49 @@
                     <navigationItem key="navigationItem" title="Search" id="MpI-Vz-Tgh"/>
                     <connections>
                         <outlet property="searchResultsTableView" destination="4Je-Ev-Va6" id="ivG-he-7En"/>
+                        <segue destination="gcZ-ys-kFx" kind="show" identifier="presentShowViewControllerFromSearch" id="8OC-Cc-MxA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKJ-91-f6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="209" y="4047"/>
+        </scene>
+        <!--Show Name-->
+        <scene sceneID="EWc-bP-Phr">
+            <objects>
+                <viewController id="JV8-8R-ijD" customClass="ShowViewController" customModule="iOSAppChallenge2015" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nvV-0h-Mzr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sg2-6M-7en"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MK4-u3-14I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAW-6y-FGx">
+                                <rect key="frame" x="0.0" y="64" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JV8-8R-ijD" id="O71-sp-xc7"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="BAW-6y-FGx" secondAttribute="bottom" constant="-64" id="DWc-be-pyH"/>
+                            <constraint firstAttribute="trailing" secondItem="BAW-6y-FGx" secondAttribute="trailing" id="c3N-gt-ID6"/>
+                            <constraint firstItem="BAW-6y-FGx" firstAttribute="leading" secondItem="MK4-u3-14I" secondAttribute="leading" id="fdU-PW-PgT"/>
+                            <constraint firstItem="BAW-6y-FGx" firstAttribute="top" secondItem="nvV-0h-Mzr" secondAttribute="bottom" id="tk9-ZF-rf1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Show Name" id="Pla-1n-HrI"/>
+                    <connections>
+                        <outlet property="scrollView" destination="BAW-6y-FGx" id="LR9-hx-IZX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JbR-cU-26i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="4870"/>
         </scene>
         <!--FeedViewController-->
         <scene sceneID="weU-1e-XXT">
@@ -112,6 +150,7 @@
                     <navigationItem key="navigationItem" title="Feed" id="lE5-60-aEt"/>
                     <connections>
                         <outlet property="scrollView" destination="A3N-2t-dp8" id="MHX-f2-fo9"/>
+                        <segue destination="gcZ-ys-kFx" kind="show" identifier="presentShowViewControllerFromFeed" id="Txm-WD-Piv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83u-qF-XGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,6 +194,7 @@
                     <navigationItem key="navigationItem" title="Home" id="luM-DG-DnW"/>
                     <connections>
                         <outlet property="scrollView" destination="ewO-b6-nka" id="r3s-Li-xVY"/>
+                        <segue destination="gcZ-ys-kFx" kind="show" identifier="presentShowViewControllerFromHome" id="bNG-w9-fYO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKS-xl-2mS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -466,11 +506,30 @@
             </objects>
             <point key="canvasLocation" x="1053" y="3307"/>
         </scene>
+        <!--Show View Controller Nav Controller-->
+        <scene sceneID="ckM-03-DxC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gcZ-ys-kFx" userLabel="Show View Controller Nav Controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hHO-ph-OR6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JV8-8R-ijD" kind="relationship" relationship="rootViewController" id="hGu-y0-grM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uew-rI-4dG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="4870"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo.png" width="1080" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aTl-oT-Bza"/>
+        <segue reference="Txm-WD-Piv"/>
     </inferredMetricsTieBreakers>
 </document>
