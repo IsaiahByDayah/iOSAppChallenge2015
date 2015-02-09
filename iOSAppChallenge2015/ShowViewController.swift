@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShowViewController: UIViewController, UIScrollViewDelegate {
+class ShowViewController: UIViewController, UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -69,30 +69,120 @@ class ShowViewController: UIViewController, UIScrollViewDelegate {
         
         let showDescriptionTextArea = UITextView(frame: CGRect(x: SideBuffer, y: showTitleLabel.frame.maxY + scrollViewWidth * 0.05, width: scrollViewWidth * 0.5, height: scrollViewWidth * 0.35
             ))
-//        showDescriptionTextArea.backgroundColor = show!.primaryColor
         showDescriptionTextArea.text = show?.description
         scrollView.addSubview(showDescriptionTextArea)
         
-//        let episodesLabel = UILabel(frame: CGRect(x: scrollViewWidth * 0.05, y: showDescriptionTextArea.frame.maxY, width: scrollViewWidth * 0.9, height: 20.0))
-//        episodesLabel.text = "Episodes"
-//        scrollView.addSubview(episodesLabel)
-        
-        let challengesLabel = UILabel(frame: CGRect(x: scrollViewWidth * 0.05, y: showDescriptionTextArea.frame.maxY + 20.0, width: scrollViewWidth * 0.9, height: 20.0))
+        let challengesLabel = UILabel(frame: CGRect(x: scrollViewWidth * 0.05, y: showDescriptionTextArea.frame.maxY + 30.0, width: scrollViewWidth * 0.9, height: 20.0))
         challengesLabel.text = "Challenges"
         scrollView.addSubview(challengesLabel)
         
-        let challenge1 = UITextView(frame: CGRect(x: scrollViewWidth * 0.1, y: challengesLabel.frame.maxY + 20.0, width: scrollViewWidth * 0.3, height: scrollViewWidth * 0.3))
-        challenge1.backgroundColor = show!.primaryColor
-        challenge1.textColor = UIColor.whiteColor()
-        challenge1.textAlignment = NSTextAlignment.Center
-        challenge1.font = UIFont.boldSystemFontOfSize(18.0)
-        challenge1.text = "GUESS\nTHE\nCHARACTER?"
-        scrollView.addSubview(challenge1)
+        var challenges = TheChallengesManager.getChallenges(show!)
+        
+        if challenges.count > 0 {
+            let challenge1 = UITextView(frame: CGRect(x: scrollViewWidth * 0.04, y: challengesLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
+            challenge1.backgroundColor = show!.primaryColor
+            challenge1.textColor = UIColor.whiteColor()
+            challenge1.textAlignment = NSTextAlignment.Center
+            challenge1.font = UIFont.boldSystemFontOfSize(16.0)
+            challenge1.text = "\n\nGuess Who?"
+            scrollView.addSubview(challenge1)
+        }
+        
+        if challenges.count > 1 {
+            let challenge2 = UITextView(frame: CGRect(x: scrollViewWidth * 0.36, y: challengesLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
+            challenge2.backgroundColor = show!.primaryColor
+            challenge2.textColor = UIColor.whiteColor()
+            challenge2.textAlignment = NSTextAlignment.Center
+            challenge2.font = UIFont.boldSystemFontOfSize(16.0)
+            challenge2.text = "\n\nTrivia"
+            scrollView.addSubview(challenge2)
+        }
+        
+        if challenges.count > 2 {
+            let challenge3 = UITextView(frame: CGRect(x: scrollViewWidth * 0.68, y: challengesLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
+            challenge3.backgroundColor = show!.primaryColor
+            challenge3.textColor = UIColor.whiteColor()
+            challenge3.textAlignment = NSTextAlignment.Center
+            challenge3.font = UIFont.boldSystemFontOfSize(16.0)
+            challenge3.text = "\n\nQuotes"
+            scrollView.addSubview(challenge3)
+        }
+        
+        let photosLabel = UILabel(frame: CGRect(x: scrollViewWidth * 0.05, y: challengesLabel.frame.maxY + scrollViewWidth * 0.28 + 30.0, width: scrollViewWidth * 0.9, height: 20.0))
+        photosLabel.text = "Photos"
+        scrollView.addSubview(photosLabel)
+        
+        let addPhoto = UIButton(frame: CGRect(x: scrollViewWidth * 0.04, y: photosLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
+        addPhoto.addTarget(self, action: "addPhoto:", forControlEvents: UIControlEvents.TouchUpInside)
+        addPhoto.imageView?.image = nil // TODO
+        addPhoto.backgroundColor = UIColor.lightGrayColor()
+        scrollView.addSubview(addPhoto)
+        
+        var photos = ThePhotosManager.getPhotos(show!)
+        
+        if photos.count > 0 {
+            let photo1 = UIImageView(frame: CGRect(x: scrollViewWidth * 0.36, y: photosLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
+            photo1.image = photos[0].source
+            photo1.backgroundColor = show!.primaryColor
+            scrollView.addSubview(photo1)
+        }
+        
+        if photos.count > 1 {
+            let photo2 = UIImageView(frame: CGRect(x: scrollViewWidth * 0.68, y: photosLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
+            photo2.image = photos[1].source
+            photo2.backgroundColor = show!.primaryColor
+            scrollView.addSubview(photo2)
+        }
+        
+        let merchLabel = UILabel(frame: CGRect(x: scrollViewWidth * 0.05, y: photosLabel.frame.maxY + scrollViewWidth * 0.28 + 30.0, width: scrollViewWidth * 0.9, height: 20.0))
+        merchLabel.text = "Merchandise"
+        scrollView.addSubview(merchLabel)
+        
+        let merch1 = UITextView(frame: CGRect(x: scrollViewWidth * 0.04, y: merchLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
+        merch1.backgroundColor = show!.primaryColor
+        merch1.textAlignment = NSTextAlignment.Center
+        merch1.font = UIFont.boldSystemFontOfSize(16.0)
+        merch1.textColor = UIColor.whiteColor()
+        merch1.text = "\n\nShirts"
+        scrollView.addSubview(merch1)
+        
+        let merch2 = UITextView(frame: CGRect(x: scrollViewWidth * 0.36, y: merchLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
+        merch2.backgroundColor = show!.primaryColor
+        merch2.textAlignment = NSTextAlignment.Center
+        merch2.font = UIFont.boldSystemFontOfSize(16.0)
+        merch2.textColor = UIColor.whiteColor()
+        merch2.text = "\n\nArt"
+        scrollView.addSubview(merch2)
+        
+        let merch3 = UITextView(frame: CGRect(x: scrollViewWidth * 0.68, y: merchLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
+        merch3.backgroundColor = show!.primaryColor
+        merch3.textAlignment = NSTextAlignment.Center
+        merch3.font = UIFont.boldSystemFontOfSize(16.0)
+        merch3.textColor = UIColor.whiteColor()
+        merch3.text = "\n\nMugs"
+        scrollView.addSubview(merch3)
         
         
         // Mark: Implement what the page looks like above here
         
         setScrollHeight() // Compacts the page
+    }
+    
+    func addPhoto(sender: UIButton!) {
+        let imagePicker = UIImagePickerController()
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+        } else {
+            imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        }
+        imagePicker.delegate = self
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        let photo = info[UIImagePickerControllerOriginalImage] as UIImage
+        ThePhotosManager.addPhoto(TheUsersManager.currentUser!, show: show!, source: photo)
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
