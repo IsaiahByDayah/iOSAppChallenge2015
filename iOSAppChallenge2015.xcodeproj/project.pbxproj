@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		038AB5CC1A8854830040DE2D /* Camera_icon_show.png in Resources */ = {isa = PBXBuildFile; fileRef = 038AB5CB1A8854830040DE2D /* Camera_icon_show.png */; };
-		038AB5CF1A8858E50040DE2D /* BsBurger.png in Resources */ = {isa = PBXBuildFile; fileRef = 038AB5CE1A8858E50040DE2D /* BsBurger.png */; };
 		03AEA7471A86EA3E0014DAFB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7461A86EA3E0014DAFB /* logo.png */; };
 		03AEA74A1A86EA850014DAFB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7481A86EA850014DAFB /* icon@2x.png */; };
 		03AEA74B1A86EA850014DAFB /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03AEA7491A86EA850014DAFB /* icon@3x.png */; };
+		03D6EDB01A88145400F213D9 /* BsBurger.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED8A1A88145400F213D9 /* BsBurger.png */; };
 		03D6EDB11A88145400F213D9 /* BBep1_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED8C1A88145400F213D9 /* BBep1_4.jpg */; };
 		03D6EDB21A88145400F213D9 /* BBep3_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED8D1A88145400F213D9 /* BBep3_5.png */; };
 		03D6EDB31A88145400F213D9 /* BBep4_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED8E1A88145400F213D9 /* BBep4_3.jpg */; };
@@ -26,7 +25,7 @@
 		03D6EDBD1A88145400F213D9 /* Drogon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED9E1A88145400F213D9 /* Drogon.jpg */; };
 		03D6EDBE1A88145400F213D9 /* Impin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6ED9F1A88145400F213D9 /* Impin.jpg */; };
 		03D6EDBF1A88145400F213D9 /* LiveDangerous.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA01A88145400F213D9 /* LiveDangerous.jpg */; };
-		03D6EDC01A88145400F213D9 /* GoT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA21A88145400F213D9 /* GoT.jpeg */; };
+		03D6EDC01A88145400F213D9 /* Game-Of-Thrones-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA21A88145400F213D9 /* Game-Of-Thrones-1.jpeg */; };
 		03D6EDC11A88145400F213D9 /* himym-banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA51A88145400F213D9 /* himym-banner.jpg */; };
 		03D6EDC21A88145400F213D9 /* himymep2_20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA71A88145400F213D9 /* himymep2_20.jpg */; };
 		03D6EDC31A88145400F213D9 /* himymep8_17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDA81A88145400F213D9 /* himymep8_17.jpg */; };
@@ -44,9 +43,8 @@
 		03D6EDDC1A88208700F213D9 /* HMerch2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDD91A88208700F213D9 /* HMerch2.jpg */; };
 		03D6EDDD1A88208700F213D9 /* HMerch3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDDA1A88208700F213D9 /* HMerch3.jpg */; };
 		03D6EDDF1A8821CE00F213D9 /* BBMerch1.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDDE1A8821CE00F213D9 /* BBMerch1.png */; };
-		03D6EDE31A884CAA00F213D9 /* Icon_Thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDE21A884CAA00F213D9 /* Icon_Thumb.png */; };
-		03D6EDE71A884E0000F213D9 /* Camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDE61A884E0000F213D9 /* Camera_icon.png */; };
 		6103E8021A87596A00D663B4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6103E8011A87596A00D663B4 /* RegisterViewController.swift */; };
+		6106B5121A8824F500C8E044 /* Camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6106B5111A8824F500C8E044 /* Camera_icon.png */; };
 		613326001A86C70E00F292E0 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */; };
 		613326021A86C71900F292E0 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326011A86C71900F292E0 /* SearchTabViewController.swift */; };
 		613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326031A86C72400F292E0 /* FeedTabViewController.swift */; };
@@ -101,12 +99,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		038AB5CB1A8854830040DE2D /* Camera_icon_show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera_icon_show.png; sourceTree = "<group>"; };
-		038AB5CD1A8855E50040DE2D /* MonoSpatial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonoSpatial.ttf; sourceTree = "<group>"; };
-		038AB5CE1A8858E50040DE2D /* BsBurger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BsBurger.png; sourceTree = "<group>"; };
 		03AEA7461A86EA3E0014DAFB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		03AEA7481A86EA850014DAFB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		03AEA7491A86EA850014DAFB /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
+		03D6ED8A1A88145400F213D9 /* BsBurger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BsBurger.png; sourceTree = "<group>"; };
 		03D6ED8C1A88145400F213D9 /* BBep1_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BBep1_4.jpg; sourceTree = "<group>"; };
 		03D6ED8D1A88145400F213D9 /* BBep3_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBep3_5.png; sourceTree = "<group>"; };
 		03D6ED8E1A88145400F213D9 /* BBep4_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BBep4_3.jpg; sourceTree = "<group>"; };
@@ -121,7 +117,7 @@
 		03D6ED9E1A88145400F213D9 /* Drogon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Drogon.jpg; sourceTree = "<group>"; };
 		03D6ED9F1A88145400F213D9 /* Impin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Impin.jpg; sourceTree = "<group>"; };
 		03D6EDA01A88145400F213D9 /* LiveDangerous.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LiveDangerous.jpg; sourceTree = "<group>"; };
-		03D6EDA21A88145400F213D9 /* GoT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoT.jpeg; sourceTree = "<group>"; };
+		03D6EDA21A88145400F213D9 /* Game-Of-Thrones-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Game-Of-Thrones-1.jpeg"; sourceTree = "<group>"; };
 		03D6EDA51A88145400F213D9 /* himym-banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "himym-banner.jpg"; sourceTree = "<group>"; };
 		03D6EDA71A88145400F213D9 /* himymep2_20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himymep2_20.jpg; sourceTree = "<group>"; };
 		03D6EDA81A88145400F213D9 /* himymep8_17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himymep8_17.jpg; sourceTree = "<group>"; };
@@ -139,9 +135,8 @@
 		03D6EDD91A88208700F213D9 /* HMerch2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HMerch2.jpg; sourceTree = "<group>"; };
 		03D6EDDA1A88208700F213D9 /* HMerch3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HMerch3.jpg; sourceTree = "<group>"; };
 		03D6EDDE1A8821CE00F213D9 /* BBMerch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBMerch1.png; sourceTree = "<group>"; };
-		03D6EDE21A884CAA00F213D9 /* Icon_Thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Thumb.png; sourceTree = "<group>"; };
-		03D6EDE61A884E0000F213D9 /* Camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera_icon.png; sourceTree = "<group>"; };
 		6103E8011A87596A00D663B4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6106B5111A8824F500C8E044 /* Camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera_icon.png; sourceTree = "<group>"; };
 		613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		613326011A86C71900F292E0 /* SearchTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
 		613326031A86C72400F292E0 /* FeedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
@@ -210,13 +205,11 @@
 		03AEA7451A86EA150014DAFB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				03D6EDE61A884E0000F213D9 /* Camera_icon.png */,
-				038AB5CB1A8854830040DE2D /* Camera_icon_show.png */,
+				6106B5111A8824F500C8E044 /* Camera_icon.png */,
 				03AEA7481A86EA850014DAFB /* icon@2x.png */,
 				03AEA7491A86EA850014DAFB /* icon@3x.png */,
 				C6DC483C1A8783E9003EAD2C /* bob.jpg */,
 				03AEA7461A86EA3E0014DAFB /* logo.png */,
-				03D6EDE21A884CAA00F213D9 /* Icon_Thumb.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -246,7 +239,7 @@
 		03D6ED891A88145400F213D9 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				038AB5CE1A8858E50040DE2D /* BsBurger.png */,
+				03D6ED8A1A88145400F213D9 /* BsBurger.png */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -322,7 +315,7 @@
 		03D6EDA11A88145400F213D9 /* Thumbnail */ = {
 			isa = PBXGroup;
 			children = (
-				03D6EDA21A88145400F213D9 /* GoT.jpeg */,
+				03D6EDA21A88145400F213D9 /* Game-Of-Thrones-1.jpeg */,
 			);
 			path = Thumbnail;
 			sourceTree = "<group>";
@@ -530,7 +523,6 @@
 		61C955E51A86DC7100BBC75C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				038AB5CD1A8855E50040DE2D /* MonoSpatial.ttf */,
 				61C955E31A86DBF900BBC75C /* Please write me a song.ttf */,
 			);
 			name = Fonts;
@@ -620,16 +612,14 @@
 				03D6EDD41A88206500F213D9 /* GTMerch1.jpg in Resources */,
 				03D6EDC71A88145400F213D9 /* himym4.jpg in Resources */,
 				03D6EDC41A88145400F213D9 /* himymep8_7.jpg in Resources */,
-				03D6EDE31A884CAA00F213D9 /* Icon_Thumb.png in Resources */,
 				03D6EDBC1A88145400F213D9 /* GTep4_3.jpg in Resources */,
 				03D6EDB41A88145400F213D9 /* BreakingBob.jpg in Resources */,
 				03D6EDBF1A88145400F213D9 /* LiveDangerous.jpg in Resources */,
 				03D6EDB21A88145400F213D9 /* BBep3_5.png in Resources */,
-				03D6EDC01A88145400F213D9 /* GoT.jpeg in Resources */,
+				03D6EDC01A88145400F213D9 /* Game-Of-Thrones-1.jpeg in Resources */,
 				03D6EDC61A88145400F213D9 /* himym3.jpg in Resources */,
 				61A6DB461A85B40800624BB4 /* Main.storyboard in Resources */,
 				03AEA74B1A86EA850014DAFB /* icon@3x.png in Resources */,
-				038AB5CC1A8854830040DE2D /* Camera_icon_show.png in Resources */,
 				03D6EDB51A88145400F213D9 /* Butts.jpg in Resources */,
 				03D6EDB61A88145400F213D9 /* Haters.gif in Resources */,
 				03D6EDCE1A88204C00F213D9 /* BBMerch2.jpg in Resources */,
@@ -638,8 +628,7 @@
 				03D6EDB31A88145400F213D9 /* BBep4_3.jpg in Resources */,
 				03D6EDC21A88145400F213D9 /* himymep2_20.jpg in Resources */,
 				03D6EDBB1A88145400F213D9 /* GTep3_9.jpg in Resources */,
-				03D6EDE71A884E0000F213D9 /* Camera_icon.png in Resources */,
-				038AB5CF1A8858E50040DE2D /* BsBurger.png in Resources */,
+				03D6EDB01A88145400F213D9 /* BsBurger.png in Resources */,
 				03D6EDDD1A88208700F213D9 /* HMerch3.jpg in Resources */,
 				03D6EDB71A88145400F213D9 /* BBurger.jpg in Resources */,
 				03D6EDBD1A88145400F213D9 /* Drogon.jpg in Resources */,
