@@ -44,38 +44,24 @@ class ShowViewController: UIViewController, UIScrollViewDelegate {
         
         // Mark: Implement what the page looks like below here
         
-        /* Examples for adding elements */
+        let font:UIFont? = UIFont(name: "Pleasewritemeasong", size: 17.0)
         
-        let redView = UIView(frame: CGRect(x: 0, y: 100, width: scrollView.contentSize.width / 2.0, height: 200))
-        redView.backgroundColor = UIColor.redColor()
-        scrollView.addSubview(redView)
+        let attrString = NSMutableAttributedString(
+            string: show!.name,
+            attributes: NSDictionary(
+                object: font!,
+                forKey: NSFontAttributeName))
+        attrString.addAttribute(NSForegroundColorAttributeName, value: OrangeColor, range: NSMakeRange(0, attrString.length))
         
-        let blackView = UIView(frame: CGRect(x: 0, y: redView.bounds.size.height - 100, width: redView.bounds.width / 2.0, height: 100))
-        blackView.backgroundColor = UIColor.blackColor()
-        redView.addSubview(blackView)
+       let showTitleLabel = UILabel(frame: CGRect(x: SideBuffer, y: SectionVerticleBuffer, width: scrollViewWidth * 0.5, height: 20.0))
+        showTitleLabel.attributedText = attrString
         
+        scrollView.addSubview(showTitleLabel)
         
-        
-        let blueView = UIView(frame: CGRect(x: 0, y: 300, width: scrollView.contentSize.width / 2.0, height: 200))
-        blueView.backgroundColor = UIColor.blueColor()
-        scrollView.addSubview(blueView
-        )
-        
-        let purpleView = UIView(frame: CGRect(x: 0, y: blueView.bounds.size.height - 100, width: blueView.bounds.width / 2.0, height: 100))
-        purpleView.backgroundColor = UIColor.purpleColor()
-        blueView.addSubview(purpleView)
-        
-        
-        
-        let browView = UIView(frame: CGRect(x: 0, y: 500, width: scrollView.contentSize.width / 2.0, height: 200))
-        browView.backgroundColor = UIColor.brownColor()
-        scrollView.addSubview(browView)
-        
-        let greyView = UIView(frame: CGRect(x: 0, y: browView.bounds.size.height - 100, width: browView.bounds.width / 2.0, height: 100))
-        greyView.backgroundColor = UIColor.grayColor()
-        browView.addSubview(greyView)
-        
-        /**/
+        let showThumbnail = UIImageView(frame: CGRect(x: showTitleLabel.frame.maxX, y: SectionVerticleBuffer, width: scrollViewWidth * 0.4, height: scrollViewWidth * 0.4))
+        showThumbnail.backgroundColor = show?.primaryColor
+        showThumbnail.image = show!.thumbnail
+        scrollView.addSubview(showThumbnail)
         
         
         

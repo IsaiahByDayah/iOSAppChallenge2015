@@ -23,8 +23,9 @@ class Show {
     var episodes: [Episode]
     let thumbnail: UIImage
     var status: Int
+    let primaryColor: UIColor
     
-    init(name: String, description: String, episodes: [Episode], thumbnail: UIImage, status: Int, keywords: [String]){
+    init(name: String, description: String, episodes: [Episode], thumbnail: UIImage, status: Int, keywords: [String], color: UIColor){
         self.name = name
         self.description = description
         self.episodes = episodes
@@ -34,6 +35,7 @@ class Show {
         for keyword in keywords {
             self.keywords.append(keyword.lowercaseString)
         }
+        self.primaryColor = color
     }
     
     func containsKeyword(keyword: String) -> Bool {

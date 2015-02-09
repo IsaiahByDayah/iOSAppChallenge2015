@@ -12,8 +12,8 @@ import UIKit
 class ShowsManager {
     var shows: [Show] = []
 
-    func addShow(name: String, withDescription: String, withImage: UIImage, withStatus: Int, withKeywords: [String]) ->Show {
-        let newShow = Show(name: name, description: withDescription, episodes: [], thumbnail: withImage, status: withStatus, keywords: withKeywords)
+    func addShow(name: String, withDescription: String, withImage: UIImage, withStatus: Int, withKeywords: [String], withPrimaryColor: UIColor) ->Show {
+        let newShow = Show(name: name, description: withDescription, episodes: [], thumbnail: withImage, status: withStatus, keywords: withKeywords, color: withPrimaryColor)
         shows.append(newShow)
         return newShow
     }
@@ -46,9 +46,9 @@ class ShowsManager {
     }
     
     init() {
-        addShow("Test Show", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"])
-        addShow("Test Show 2", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"])
-        addShow("Test Show 3", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"])
-        addShow("Test Show 4", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"])
+        addShow("Test Show", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"], withPrimaryColor: UIColor.greenColor())
+        addShow("Test Show 2", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"], withPrimaryColor: UIColor.greenColor())
+        addShow("Test Show 3", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"], withPrimaryColor: UIColor.greenColor())
+        addShow("Test Show 4", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"], withPrimaryColor: UIColor.greenColor())
     }
 }
