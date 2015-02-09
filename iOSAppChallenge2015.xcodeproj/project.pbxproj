@@ -47,6 +47,7 @@
 		03D6EDE31A884CAA00F213D9 /* Icon_Thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDE21A884CAA00F213D9 /* Icon_Thumb.png */; };
 		03D6EDE71A884E0000F213D9 /* Camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6EDE61A884E0000F213D9 /* Camera_icon.png */; };
 		6103E8021A87596A00D663B4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6103E8011A87596A00D663B4 /* RegisterViewController.swift */; };
+		6106B5141A88781D00C8E044 /* Trophy3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6106B5131A88781D00C8E044 /* Trophy3.png */; };
 		613326001A86C70E00F292E0 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */; };
 		613326021A86C71900F292E0 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326011A86C71900F292E0 /* SearchTabViewController.swift */; };
 		613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613326031A86C72400F292E0 /* FeedTabViewController.swift */; };
@@ -131,6 +132,7 @@
 		03D6EDE21A884CAA00F213D9 /* Icon_Thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Thumb.png; sourceTree = "<group>"; };
 		03D6EDE61A884E0000F213D9 /* Camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera_icon.png; sourceTree = "<group>"; };
 		6103E8011A87596A00D663B4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6106B5131A88781D00C8E044 /* Trophy3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trophy3.png; sourceTree = "<group>"; };
 		613325FF1A86C70E00F292E0 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		613326011A86C71900F292E0 /* SearchTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
 		613326031A86C72400F292E0 /* FeedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		03AEA7451A86EA150014DAFB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6106B5131A88781D00C8E044 /* Trophy3.png */,
 				03D6EDE61A884E0000F213D9 /* Camera_icon.png */,
 				038AB5CB1A8854830040DE2D /* Camera_icon_show.png */,
 				03AEA7481A86EA850014DAFB /* icon@2x.png */,
@@ -598,6 +601,7 @@
 				03D6EDC01A88145400F213D9 /* GoT.jpeg in Resources */,
 				03D6EDC61A88145400F213D9 /* himym3.jpg in Resources */,
 				61A6DB461A85B40800624BB4 /* Main.storyboard in Resources */,
+				6106B5141A88781D00C8E044 /* Trophy3.png in Resources */,
 				03AEA74B1A86EA850014DAFB /* icon@3x.png in Resources */,
 				038AB5CC1A8854830040DE2D /* Camera_icon_show.png in Resources */,
 				03D6EDB51A88145400F213D9 /* Butts.jpg in Resources */,
@@ -796,9 +800,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSAppChallenge2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -807,9 +813,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSAppChallenge2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

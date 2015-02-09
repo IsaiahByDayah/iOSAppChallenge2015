@@ -11,6 +11,8 @@ import UIKit
 class SearchTabViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate {
     
     var showSearchResults: [Show]!
+    
+    var selectedIndex: Int?
 
     @IBOutlet weak var searchResultsTableView: UITableView!
     
@@ -64,6 +66,20 @@ class SearchTabViewController: UIViewController, UITextFieldDelegate, UITableVie
         showSearchResults = TheShowsManager.searchShows(textField.text)
         searchResultsTableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
         return true
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedIndex = indexPath.row
+        performSegueWithIdentifier("presentShowViewControllerFromSearch", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "presentShowViewControllerFromSearch" {
+            let navViewController = segue.destinationViewController as UINavigationController
+            let showViewController = navViewController.viewControllers[0] as ShowViewController
+            showViewController.show = showSearchResults[selectedIndex!]
+
+        }
     }
 
 }

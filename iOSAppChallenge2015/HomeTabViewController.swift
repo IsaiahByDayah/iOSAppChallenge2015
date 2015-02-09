@@ -46,7 +46,10 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate, UIImagePick
         // Examples for adding elements
         
         
-        let bannerView = UIView(frame: CGRect(x: 0, y: 0, width: scrollViewWidth, height: 135))
+        let bannerView = UIImageView(frame: CGRect(x: 0, y: 0, width: scrollViewWidth, height: 135))
+
+        bannerView.image = UIImage(named: "himym-banner.jpg")
+        bannerView.contentMode = UIViewContentMode.ScaleAspectFill
         //enter show thumbnail in banner
         for show in TheUsersManager.currentUser!.shows{
         }
@@ -79,20 +82,24 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate, UIImagePick
         scrollView.addSubview(showsScrollView)
         // Build Verticle Scroll View
         
-        let show1 = UIView(frame: CGRect(x: (SideBuffer * 0) + (scrollViewWidth / 3.5 * 0), y: 0, width: scrollViewWidth/3.5, height:scrollViewWidth/3.5))
-        show1.backgroundColor = UIColor.redColor()
+        let show1 = UIImageView(frame: CGRect(x: (SideBuffer * 0) + (scrollViewWidth / 3.5 * 0), y: 0, width: scrollViewWidth/3.5, height:scrollViewWidth/3.5))
+//        show1.backgroundColor = UIColor.redColor()
+        show1.image = UIImage(named: "GoT.jpeg")
         showsScrollView.addSubview(show1)
         
-        let show2 = UIView(frame: CGRect(x: (SideBuffer * 1) + (scrollViewWidth / 3.5 * 1), y: 0, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
-        show2.backgroundColor = UIColor.redColor()
+        let show2 = UIImageView(frame: CGRect(x: (SideBuffer * 1) + (scrollViewWidth / 3.5 * 1), y: 0, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
+//        show2.backgroundColor = UIColor.redColor()
+        show1.image = UIImage(named: "himym.jpg")
         showsScrollView.addSubview(show2)
         
-        let show3 = UIView(frame: CGRect(x: (SideBuffer * 2) + (scrollViewWidth / 3.5 * 2), y: 0, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
-        show3.backgroundColor = UIColor.redColor()
+        let show3 = UIImageView(frame: CGRect(x: (SideBuffer * 2) + (scrollViewWidth / 3.5 * 2), y: 0, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
+//        show3.backgroundColor = UIColor.redColor()
+        show1.image = UIImage(named: "BBurger.jpg")
         showsScrollView.addSubview(show3)
         
-        let show4 = UIView(frame: CGRect(x: (SideBuffer * 3) + (scrollViewWidth / 3.5 * 3), y: 0, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
+        let show4 = UIImageView(frame: CGRect(x: (SideBuffer * 3) + (scrollViewWidth / 3.5 * 3), y: 0, width: scrollViewWidth/3.5, height: scrollViewWidth/3.5))
         show4.backgroundColor = UIColor.redColor()
+        show1.image = UIImage(named: "logo.png")
         showsScrollView.addSubview(show4)
 
         showsScrollView.compactContentSize()
@@ -102,12 +109,14 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate, UIImagePick
         section2.text = "Challenge Trophies"
         scrollView.addSubview(section2)
         
-        let challengeTrophie1 = UIView(frame: CGRect(x: 15, y: 375, width: scrollViewWidth/2, height: 170))
-        challengeTrophie1.backgroundColor = UIColor.greenColor()
+        let challengeTrophie1 = UIImageView(frame: CGRect(x: 15, y: 375, width: scrollViewWidth/2, height: 170))
+//        challengeTrophie1.backgroundColor = UIColor.greenColor()
+        challengeTrophie1.image = UIImage(named: "Trophy3.png")
         scrollView.addSubview(challengeTrophie1)
         
-        let challengeTrophie2 = UIView(frame: CGRect(x: 35+(scrollViewWidth/2), y: 375, width: scrollViewWidth/2, height: 170))
-        challengeTrophie2.backgroundColor = UIColor.greenColor()
+        let challengeTrophie2 = UIImageView(frame: CGRect(x: 35+(scrollViewWidth/2), y: 375, width: scrollViewWidth/2, height: 170))
+//        challengeTrophie2.backgroundColor = UIColor.greenColor()
+        challengeTrophie2.image = UIImage(named: "Trophy3.png")
         scrollView.addSubview(challengeTrophie2)
         
         let section3 = UILabel(frame: CGRect(x: 15, y: 555, width: scrollViewWidth, height: 20))
@@ -126,16 +135,19 @@ class HomeTabViewController: UIViewController, UIScrollViewDelegate, UIImagePick
         section4.text = "Photos"
         scrollView.addSubview(section4)
         
-        let pic1 = UIView(frame: CGRect(x: 15, y: 790, width: 115, height: 105))
+        let pic1 = UIImageView(frame: CGRect(x: 15, y: 790, width: 115, height: 105))
         pic1.backgroundColor = UIColor.orangeColor()
+        pic1.image = UIImage(named: "himym2.jpg")
         scrollView.addSubview(pic1)
         
-        let pic2 = UIView(frame: CGRect(x: 145, y: 790, width: 115, height: 105))
+        let pic2 = UIImageView(frame: CGRect(x: 145, y: 790, width: 115, height: 105))
         pic2.backgroundColor = UIColor.orangeColor()
+        pic2.image = UIImage(named: "Butts.jpg")
         scrollView.addSubview(pic2)
         
-        let pic3 = UIView(frame: CGRect(x: 275, y: 790, width: 115, height: 105))
+        let pic3 = UIImageView(frame: CGRect(x: 275, y: 790, width: 115, height: 105))
         pic3.backgroundColor = UIColor.orangeColor()
+        pic3.image = UIImage(named: "BreakingBob.jpg")
         scrollView.addSubview(pic3)
         
         /*

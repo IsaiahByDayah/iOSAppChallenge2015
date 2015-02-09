@@ -11,10 +11,12 @@
             <string>Pleasewritemeasong</string>
             <string>Pleasewritemeasong</string>
             <string>Pleasewritemeasong</string>
+            <string>Pleasewritemeasong</string>
+            <string>Pleasewritemeasong</string>
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Search-->
+        <!--Moot-->
         <scene sceneID="ELz-9J-aRI">
             <objects>
                 <viewController id="Baf-Yg-yxM" customClass="SearchTabViewController" customModule="iOSAppChallenge2015" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +74,7 @@
                             <constraint firstItem="4Je-Ev-Va6" firstAttribute="leading" secondItem="jCA-Vo-r67" secondAttribute="leading" id="uJv-GZ-o8I"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Search" id="MpI-Vz-Tgh"/>
+                    <navigationItem key="navigationItem" title="Moot" id="MpI-Vz-Tgh"/>
                     <connections>
                         <outlet property="searchResultsTableView" destination="4Je-Ev-Va6" id="ivG-he-7En"/>
                         <segue destination="gcZ-ys-kFx" kind="show" identifier="presentShowViewControllerFromSearch" id="8OC-Cc-MxA"/>
@@ -82,7 +84,7 @@
             </objects>
             <point key="canvasLocation" x="209" y="4047"/>
         </scene>
-        <!--Show Name-->
+        <!--Moot-->
         <scene sceneID="EWc-bP-Phr">
             <objects>
                 <viewController id="JV8-8R-ijD" customClass="ShowViewController" customModule="iOSAppChallenge2015" customModuleProvider="target" sceneMemberID="viewController">
@@ -110,7 +112,7 @@
                             <constraint firstItem="BAW-6y-FGx" firstAttribute="top" secondItem="nvV-0h-Mzr" secondAttribute="bottom" id="tk9-ZF-rf1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Show Name" id="Pla-1n-HrI"/>
+                    <navigationItem key="navigationItem" title="Moot" id="Pla-1n-HrI"/>
                     <connections>
                         <outlet property="scrollView" destination="BAW-6y-FGx" id="LR9-hx-IZX"/>
                     </connections>
@@ -147,7 +149,7 @@
                             <constraint firstItem="A3N-2t-dp8" firstAttribute="bottom" secondItem="eMY-wO-n0q" secondAttribute="top" id="nzE-cA-PUU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Feed" id="lE5-60-aEt"/>
+                    <navigationItem key="navigationItem" title="Moot" id="lE5-60-aEt"/>
                     <connections>
                         <outlet property="scrollView" destination="A3N-2t-dp8" id="MHX-f2-fo9"/>
                         <segue destination="gcZ-ys-kFx" kind="show" identifier="presentShowViewControllerFromFeed" id="Txm-WD-Piv"/>
@@ -157,7 +159,7 @@
             </objects>
             <point key="canvasLocation" x="1053" y="4047"/>
         </scene>
-        <!--Home-->
+        <!--Moot-->
         <scene sceneID="jCV-GX-grh">
             <objects>
                 <viewController id="W5s-SD-cKn" customClass="HomeTabViewController" customModule="iOSAppChallenge2015" customModuleProvider="target" sceneMemberID="viewController">
@@ -191,7 +193,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="luM-DG-DnW"/>
+                    <navigationItem key="navigationItem" title="Moot" id="luM-DG-DnW"/>
                     <connections>
                         <outlet property="scrollView" destination="ewO-b6-nka" id="r3s-Li-xVY"/>
                         <segue destination="gcZ-ys-kFx" kind="show" identifier="presentShowViewControllerFromHome" id="bNG-w9-fYO"/>
@@ -213,9 +215,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-t3-wQR">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-t3-wQR">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="95"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyF-0b-pWx">
+                                        <rect key="frame" x="213" y="14" width="174" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="GkU-KV-toA"/>
+                                            <constraint firstAttribute="width" constant="174" id="IuS-xR-5bP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Pleasewritemeasong" family="Pleasewritemeasong" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JyF-0b-pWx" firstAttribute="centerX" secondItem="i6x-t3-wQR" secondAttribute="centerX" id="1td-Ue-bmD"/>
+                                    <constraint firstItem="JyF-0b-pWx" firstAttribute="top" secondItem="i6x-t3-wQR" secondAttribute="top" constant="14" id="67s-Nq-fFw"/>
+                                    <constraint firstItem="JyF-0b-pWx" firstAttribute="centerY" secondItem="i6x-t3-wQR" secondAttribute="centerY" id="Jk0-GD-x0e"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOP-vl-8IK">
                                 <rect key="frame" x="0.0" y="95" width="600" height="30"/>
@@ -347,9 +366,23 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hK3-Ke-Rr9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="95"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-Su-ll2">
+                                        <rect key="frame" x="213" y="14" width="174" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="174" id="HMz-cX-kkE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Pleasewritemeasong" family="Pleasewritemeasong" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="600" id="MYz-Yz-e8q"/>
+                                    <constraint firstItem="cvb-Su-ll2" firstAttribute="centerY" secondItem="hK3-Ke-Rr9" secondAttribute="centerY" id="ZEW-oB-bSb"/>
+                                    <constraint firstItem="cvb-Su-ll2" firstAttribute="top" secondItem="hK3-Ke-Rr9" secondAttribute="top" constant="14" id="lbJ-dr-IVH"/>
+                                    <constraint firstItem="cvb-Su-ll2" firstAttribute="centerX" secondItem="hK3-Ke-Rr9" secondAttribute="centerX" id="yTZ-94-ZuL"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjQ-NB-NMl">

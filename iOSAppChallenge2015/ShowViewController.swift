@@ -114,7 +114,7 @@ class ShowViewController: UIViewController, UIScrollViewDelegate, UIImagePickerC
         
         let addPhoto = UIButton(frame: CGRect(x: scrollViewWidth * 0.04, y: photosLabel.frame.maxY + 15.0, width: scrollViewWidth * 0.28, height: scrollViewWidth * 0.28))
         addPhoto.addTarget(self, action: "addPhoto:", forControlEvents: UIControlEvents.TouchUpInside)
-        addPhoto.imageView?.image = nil // TODO
+        addPhoto.imageView?.image = UIImage(named: "Camera_icon_show.png")
         addPhoto.backgroundColor = UIColor.lightGrayColor()
         scrollView.addSubview(addPhoto)
         

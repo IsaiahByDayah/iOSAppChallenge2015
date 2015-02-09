@@ -51,4 +51,8 @@ class UsersManager {
         }
         return false
     }
+    
+    init() {
+        addUser("Admin", password: "password", profilePic: nil)
+    }
 }
