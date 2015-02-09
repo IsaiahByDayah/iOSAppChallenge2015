@@ -21,23 +21,15 @@ class Show {
     let description: String
     let keywords: [String]
     var episodes: [Episode]
-<<<<<<< HEAD
     let thumbnail: UIImage
-=======
-    //var thumbnail: UIImage
->>>>>>> TestBranch
     var status: Int
     let primaryColor: UIColor
     
-<<<<<<< HEAD
     init(name: String, description: String, episodes: [Episode], thumbnail: UIImage, status: Int, keywords: [String], color: UIColor){
-=======
-    init(name: String, description: String, episodes: [Episode], /*thumbnail: UIImage*/ status: Int){
->>>>>>> TestBranch
         self.name = name
         self.description = description
         self.episodes = episodes
-        //self.thumbnail = thumbnail
+        self.thumbnail = thumbnail
         self.status = status
         self.keywords = []
         for keyword in keywords {
