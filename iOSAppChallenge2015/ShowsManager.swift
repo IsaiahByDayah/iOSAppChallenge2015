@@ -12,6 +12,7 @@ import UIKit
 class ShowsManager {
     var shows: [Show] = []
 
+
     func addShow(name: String, withDescription: String, withImage: UIImage, withStatus: Int, withKeywords: [String], withPrimaryColor: UIColor) ->Show {
         let newShow = Show(name: name, description: withDescription, episodes: [], thumbnail: withImage, status: withStatus, keywords: withKeywords, color: withPrimaryColor)
         shows.append(newShow)
