@@ -20,14 +20,14 @@ class Show {
     var name: String
     var description: String
     var episodes: [Episode]
-    //var thumbnail: UIImage
+    var thumbnail: UIImage
     var status: Int
     
-    init(name: String, description: String, episodes: [Episode], /*thumbnail: UIImage*/ status: Int){
+    init(name: String, description: String, episodes: [Episode], thumbnail: UIImage, status: Int){
         self.name = name
         self.description = description
         self.episodes = episodes
-        //self.thumbnail = thumbnail
+        self.thumbnail = thumbnail
         self.status = status
     }
     

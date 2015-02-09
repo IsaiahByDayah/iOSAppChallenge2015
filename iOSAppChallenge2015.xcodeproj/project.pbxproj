@@ -36,14 +36,6 @@
 		61A6DB4B1A85B40800624BB4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A6DB491A85B40800624BB4 /* LaunchScreen.xib */; };
 		61A6DB571A85B40800624BB4 /* iOSAppChallenge2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A6DB561A85B40800624BB4 /* iOSAppChallenge2015Tests.swift */; };
 		61C955E41A86DC6C00BBC75C /* Please write me a song.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C955E31A86DBF900BBC75C /* Please write me a song.ttf */; };
-		C6DC48391A876894003EAD2C /* VideoGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC48381A876894003EAD2C /* VideoGameViewController.swift */; };
-		C6DC483B1A8779CC003EAD2C /* MultipleChoiceGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC483A1A8779CC003EAD2C /* MultipleChoiceGameViewController.swift */; };
-		C6DC483D1A8783E9003EAD2C /* bob.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6DC483C1A8783E9003EAD2C /* bob.jpg */; };
-		C6DC483F1A878949003EAD2C /* PictureGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC483E1A878949003EAD2C /* PictureGameViewController.swift */; };
-		C6DC48411A879148003EAD2C /* VideoTextGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC48401A879148003EAD2C /* VideoTextGame.swift */; };
-		C6DC48431A879157003EAD2C /* PictureTextGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC48421A879157003EAD2C /* PictureTextGame.swift */; };
-		C6DC48451A879167003EAD2C /* MultipleChoiceGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC48441A879167003EAD2C /* MultipleChoiceGame.swift */; };
-		C6DC48471A879179003EAD2C /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC48461A879179003EAD2C /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,14 +82,6 @@
 		61A6DB551A85B40800624BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61A6DB561A85B40800624BB4 /* iOSAppChallenge2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppChallenge2015Tests.swift; sourceTree = "<group>"; };
 		61C955E31A86DBF900BBC75C /* Please write me a song.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Please write me a song.ttf"; sourceTree = "<group>"; };
-		C6DC48381A876894003EAD2C /* VideoGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoGameViewController.swift; sourceTree = "<group>"; };
-		C6DC483A1A8779CC003EAD2C /* MultipleChoiceGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceGameViewController.swift; sourceTree = "<group>"; };
-		C6DC483C1A8783E9003EAD2C /* bob.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bob.jpg; path = ../../../../../Downloads/bob.jpg; sourceTree = "<group>"; };
-		C6DC483E1A878949003EAD2C /* PictureGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureGameViewController.swift; sourceTree = "<group>"; };
-		C6DC48401A879148003EAD2C /* VideoTextGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTextGame.swift; sourceTree = "<group>"; };
-		C6DC48421A879157003EAD2C /* PictureTextGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureTextGame.swift; sourceTree = "<group>"; };
-		C6DC48441A879167003EAD2C /* MultipleChoiceGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceGame.swift; sourceTree = "<group>"; };
-		C6DC48461A879179003EAD2C /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +107,6 @@
 			children = (
 				03AEA7481A86EA850014DAFB /* icon@2x.png */,
 				03AEA7491A86EA850014DAFB /* icon@3x.png */,
-				C6DC483C1A8783E9003EAD2C /* bob.jpg */,
 				03AEA7461A86EA3E0014DAFB /* logo.png */,
 			);
 			name = Images;
@@ -172,13 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				61A6DB441A85B40800624BB4 /* Main.storyboard */,
-				C6DC483E1A878949003EAD2C /* PictureGameViewController.swift */,
-				C6DC483A1A8779CC003EAD2C /* MultipleChoiceGameViewController.swift */,
-				C6DC48381A876894003EAD2C /* VideoGameViewController.swift */,
-				C6DC48401A879148003EAD2C /* VideoTextGame.swift */,
-				C6DC48421A879157003EAD2C /* PictureTextGame.swift */,
-				C6DC48441A879167003EAD2C /* MultipleChoiceGame.swift */,
-				C6DC48461A879179003EAD2C /* GameManager.swift */,
 				61A6DB3C1A85B40800624BB4 /* AppDelegate.swift */,
 				61A2B6FD1A85E91200850234 /* Globals.swift */,
 				61A2B6FF1A85EAB600850234 /* Constants.swift */,
@@ -333,7 +309,6 @@
 				61A6DB4B1A85B40800624BB4 /* LaunchScreen.xib in Resources */,
 				61A6DB481A85B40800624BB4 /* Images.xcassets in Resources */,
 				03AEA74A1A86EA850014DAFB /* icon@2x.png in Resources */,
-				C6DC483D1A8783E9003EAD2C /* bob.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +328,6 @@
 			files = (
 				617B6A5F1A86E5D8003D5718 /* LoginViewController.swift in Sources */,
 				613326041A86C72400F292E0 /* FeedTabViewController.swift in Sources */,
-				C6DC48411A879148003EAD2C /* VideoTextGame.swift in Sources */,
 				61A2B6FB1A85CF0F00850234 /* PhotosManager.swift in Sources */,
 				61A2B6E31A85CDF600850234 /* UsersManager.swift in Sources */,
 				61A2B6F71A85CEE300850234 /* MerchandiseManager.swift in Sources */,
@@ -367,17 +341,11 @@
 				61A2B6EF1A85CE8200850234 /* ChallengesManager.swift in Sources */,
 				61A2B6F91A85CF0100850234 /* Photo.swift in Sources */,
 				61A2B6F11A85CE9F00850234 /* Comment.swift in Sources */,
-				C6DC483F1A878949003EAD2C /* PictureGameViewController.swift in Sources */,
-				C6DC48471A879179003EAD2C /* GameManager.swift in Sources */,
 				61A2B6E51A85CE2500850234 /* Show.swift in Sources */,
 				61A2B7001A85EAB600850234 /* Constants.swift in Sources */,
 				61A2B6E11A85CDD900850234 /* User.swift in Sources */,
-				C6DC483B1A8779CC003EAD2C /* MultipleChoiceGameViewController.swift in Sources */,
-				C6DC48451A879167003EAD2C /* MultipleChoiceGame.swift in Sources */,
 				61A2B6F31A85CEAC00850234 /* CommentsManager.swift in Sources */,
 				61A2B6E91A85CE4A00850234 /* Episode.swift in Sources */,
-				C6DC48431A879157003EAD2C /* PictureTextGame.swift in Sources */,
-				C6DC48391A876894003EAD2C /* VideoGameViewController.swift in Sources */,
 				61A6DB3D1A85B40800624BB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,7 @@ class ShowsManager {
     var shows: [Show] = []
 
     func addShow(name: String, withDescription: String, withImage: UIImage, withStatus: Int) ->Show {
-        let newShow = Show(name: name, description: withDescription, episodes: []/*, thumbnail: withImage*/, status: withStatus)
+        let newShow = Show(name: name, description: withDescription, episodes: [], thumbnail: withImage, status: withStatus)
         shows.append(newShow)
         return newShow
     }
