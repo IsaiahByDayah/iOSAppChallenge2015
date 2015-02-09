@@ -12,8 +12,13 @@ import UIKit
 class ShowsManager {
     var shows: [Show] = []
 
+<<<<<<< HEAD
     func addShow(name: String, withDescription: String, withImage: UIImage, withStatus: Int, withKeywords: [String], withPrimaryColor: UIColor) ->Show {
         let newShow = Show(name: name, description: withDescription, episodes: [], thumbnail: withImage, status: withStatus, keywords: withKeywords, color: withPrimaryColor)
+=======
+    func addShow(name: String, withDescription: String, withImage: UIImage, withStatus: Int) ->Show {
+        let newShow = Show(name: name, description: withDescription, episodes: []/*, thumbnail: withImage*/, status: withStatus)
+>>>>>>> TestBranch
         shows.append(newShow)
         return newShow
     }
