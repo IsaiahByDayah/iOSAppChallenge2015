@@ -46,9 +46,12 @@ class ShowsManager {
     }
     
     init() {
-        addShow("Test Show", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"], withPrimaryColor: UIColor.greenColor())
-        addShow("Test Show 2", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"], withPrimaryColor: UIColor.greenColor())
-        addShow("Test Show 3", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"], withPrimaryColor: UIColor.greenColor())
-        addShow("Test Show 4", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["Test"], withPrimaryColor: UIColor.greenColor())
+        addShow("How I Met Your Mother", withDescription: "Test Description", withImage: UIImage(named: "himym.jpg")!, withStatus: ShowStatus.Complete, withKeywords: ["How I Met Your Mother"], withPrimaryColor: UIColor(red: 70/255, green: 32/255, blue: 87/255, alpha: 1.0))
+        addShow("Game of Thrones", withDescription: "Test Description", withImage: UIImage(named: "GoT.jpeg")!, withStatus: ShowStatus.Complete, withKeywords: ["Game of Thrones"], withPrimaryColor: UIColor(red: 136/255, green: 26/255, blue: 13/255, alpha: 1.0))
+        addShow("Bob's Burgers", withDescription: "Test Description", withImage: UIImage(named: "BBurger.jpg")!, withStatus: ShowStatus.Complete, withKeywords: ["Bob's Burgers"], withPrimaryColor: UIColor(red: 36/255, green: 87/255, blue: 156/255, alpha: 1.0))
+        addShow("American Horror Story: Murder House", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["American Horror Story: Murder House"], withPrimaryColor: UIColor.greenColor())
+        addShow("American Horror Story: Asylum", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["American Horror Story: Asylum"], withPrimaryColor: UIColor.greenColor())
+        addShow("American Horror Story: Coven", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["American Horror Story: Coven"], withPrimaryColor: UIColor.greenColor())
+        addShow("American Horror Story: Freak Show", withDescription: "Test Description", withImage: UIImage(named: "logo.png")!, withStatus: ShowStatus.Complete, withKeywords: ["American Horror Story: Freak Show"], withPrimaryColor: UIColor.greenColor())
     }
 }
