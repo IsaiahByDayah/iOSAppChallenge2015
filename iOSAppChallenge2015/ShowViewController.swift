@@ -46,23 +46,48 @@ class ShowViewController: UIViewController, UIScrollViewDelegate {
         
         let font:UIFont? = UIFont(name: "Pleasewritemeasong", size: 17.0)
         
-        let attrString = NSMutableAttributedString(
-            string: show!.name,
-            attributes: NSDictionary(
-                object: font!,
-                forKey: NSFontAttributeName))
-        attrString.addAttribute(NSForegroundColorAttributeName, value: OrangeColor, range: NSMakeRange(0, attrString.length))
-        
-       let showTitleLabel = UILabel(frame: CGRect(x: SideBuffer, y: SectionVerticleBuffer, width: scrollViewWidth * 0.5, height: 20.0))
-        showTitleLabel.attributedText = attrString
+       let showTitleLabel = UILabel(frame: CGRect(x: scrollViewWidth * 0.05, y: SectionVerticleBuffer, width: scrollViewWidth * 0.5, height: 20.0))
+        showTitleLabel.textColor = OrangeColor
+        showTitleLabel.text = show!.name
         
         scrollView.addSubview(showTitleLabel)
         
-        let showThumbnail = UIImageView(frame: CGRect(x: showTitleLabel.frame.maxX, y: SectionVerticleBuffer, width: scrollViewWidth * 0.4, height: scrollViewWidth * 0.4))
+        let showThumbnail = UIImageView(frame: CGRect(x: scrollViewWidth * 0.6, y: SectionVerticleBuffer, width: scrollViewWidth * 0.35, height: scrollViewWidth * 0.35))
         showThumbnail.backgroundColor = show?.primaryColor
         showThumbnail.image = show!.thumbnail
         scrollView.addSubview(showThumbnail)
         
+        let showStatusView = UIView(frame: CGRect(x: showThumbnail.frame.minX + showThumbnail.frame.size.width * 0.2, y: showThumbnail.frame.maxY, width: showThumbnail.frame.size.width * 0.8, height: scrollViewWidth * 0.10))
+        showStatusView.backgroundColor = show!.primaryColor
+        scrollView.addSubview(showStatusView)
+        
+        let showStatusLabel = UILabel(frame: CGRect(x: 0, y: 0, width: showStatusView.frame.width, height: showStatusView.frame.height))
+        showStatusLabel.textColor = UIColor.whiteColor()
+        showStatusLabel.text = show!.statusText()
+        showStatusLabel.textAlignment = NSTextAlignment.Center
+        showStatusView.addSubview(showStatusLabel)
+        
+        let showDescriptionTextArea = UITextView(frame: CGRect(x: SideBuffer, y: showTitleLabel.frame.maxY + scrollViewWidth * 0.05, width: scrollViewWidth * 0.5, height: scrollViewWidth * 0.35
+            ))
+//        showDescriptionTextArea.backgroundColor = show!.primaryColor
+        showDescriptionTextArea.text = show?.description
+        scrollView.addSubview(showDescriptionTextArea)
+        
+//        let episodesLabel = UILabel(frame: CGRect(x: scrollViewWidth * 0.05, y: showDescriptionTextArea.frame.maxY, width: scrollViewWidth * 0.9, height: 20.0))
+//        episodesLabel.text = "Episodes"
+//        scrollView.addSubview(episodesLabel)
+        
+        let challengesLabel = UILabel(frame: CGRect(x: scrollViewWidth * 0.05, y: showDescriptionTextArea.frame.maxY + 20.0, width: scrollViewWidth * 0.9, height: 20.0))
+        challengesLabel.text = "Challenges"
+        scrollView.addSubview(challengesLabel)
+        
+        let challenge1 = UITextView(frame: CGRect(x: scrollViewWidth * 0.1, y: challengesLabel.frame.maxY + 20.0, width: scrollViewWidth * 0.3, height: scrollViewWidth * 0.3))
+        challenge1.backgroundColor = show!.primaryColor
+        challenge1.textColor = UIColor.whiteColor()
+        challenge1.textAlignment = NSTextAlignment.Center
+        challenge1.font = UIFont.boldSystemFontOfSize(18.0)
+        challenge1.text = "GUESS\nTHE\nCHARACTER?"
+        scrollView.addSubview(challenge1)
         
         
         // Mark: Implement what the page looks like above here

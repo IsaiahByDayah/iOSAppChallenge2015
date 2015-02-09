@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 class ChallengesManager {
     
     var challenges: [Challenge] = []
     
-    func addChallenge(name: String, withDescription: String, withScene: String, forShow: Show) -> Challenge {
-        let challenge = Challenge(name: name, description: withDescription, show: forShow, scene: withScene)
+    func addChallenge(question: String, withAnswer: String,  forShow: Show, withImage: UIImage) -> Challenge {
+        let challenge = Challenge(question: question, answer: withAnswer, show: forShow, image: withImage)
         challenges.append(challenge)
         return challenge
     }

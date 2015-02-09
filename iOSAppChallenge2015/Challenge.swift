@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Challenge {
     
@@ -16,25 +17,20 @@ class Challenge {
     
     let id = SubStruct.id++
     
-    let name: String
-    let description: String
     var highScore = 0
     let show: Show
-//    let scene: GameScene //TODO
-    
-    func play() {
-        // TODO
-        println("Playing Challenge")
-    }
+    let question: String
+    let answer: String
+    let image: UIImage
     
     func updateHighScore(score: Int) {
         if score > highScore { highScore = score }
     }
     
-    init(name: String, description: String, show: Show, scene: String) {
-        self.name = name
-        self.description = description
+    init(question: String, answer: String, show: Show, image: UIImage) {
+        self.question = question
+        self.answer = answer
         self.show = show
-//        self.scene = scene // TODO
+        self.image = image
     }
 }

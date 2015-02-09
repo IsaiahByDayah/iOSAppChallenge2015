@@ -48,9 +48,21 @@ class Show {
         return false
     }
     
-    //fix later
-    /*func addEpisode(name: String, description: String){
-        episodes.append(theEpisodeManager.);
-    }*/
+    func statusText() -> String{
+        switch self.status {
+        case ShowStatus.Canceled:
+            return "Canceled"
+        case ShowStatus.Complete:
+            return "Complete"
+        case ShowStatus.InProduction:
+            return "In Production"
+        case ShowStatus.OnAir:
+            return "On Air"
+        case ShowStatus.OnHiatus:
+            return "Oh Hiatus"
+        default:
+            return "Unknown"
+        }
+    }
     
 }
